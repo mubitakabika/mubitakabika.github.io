@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<meta
+    name="description"
+    content="Professional skills and areas of expertise of Mubita Siasabuzingo Kabika."
+>
+
+<meta
+    name="author"
+    content="Mubita Siasabuzingo Kabika"
+>
+
+<title>
+    Skills | Mubita Siasabuzingo Kabika
+</title>
+
+<link
+    rel="stylesheet"
+    href="css/style.css"
+>
+
+<style>
+
+/* =====================================================
+   SKILLS PAGE
+===================================================== */
+
+.skills-page {
+    padding-top: 115px;
+    padding-bottom: 100px;
+}
+
+
+/* =====================================================
+   MODE BUTTON
+===================================================== */
+
+.mode-toggle {
+    width: 42px;
+    height: 42px;
+    margin-left: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgba(212,175,55,0.35);
+    background: rgba(255,255,255,0.04);
+    color: #d4af37;
+    font-size: 17px;
+    cursor: pointer;
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.mode-toggle:hover {
+    transform: rotate(12deg) scale(1.05);
+    background: rgba(212,175,55,0.1);
+    border-color: rgba(212,175,55,0.6);
+}
+
+
+/* =====================================================
+   INTRO
+===================================================== */
+
+.skills-page .section-heading {
+    max-width: 900px;
+    margin-bottom: 75px;
+}
+
+.skills-page .section-label {
+    color: #d4af37;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.skills-page h1 {
+    max-width: 850px;
+    color: var(--heading-color, #ffffff);
+    font-size: clamp(45px, 6vw, 76px);
+    line-height: 1.02;
+    letter-spacing: -3px;
+    margin-bottom: 28px;
+}
+
+.skills-page .page-intro {
+    max-width: 720px;
+    color: var(--muted-color, #a1a1aa);
+    font-size: 17px;
+    line-height: 1.85;
+}
+
+
+/* =====================================================
+   SKILL GRID
+===================================================== */
+
+.skills-categories {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   SKILL CARD
+===================================================== */
+
+.skill-category {
+    position: relative;
+    overflow: hidden;
+    min-height: 310px;
+    padding: 36px;
+    border-radius: 24px;
+    border: 1px solid var(--card-border, rgba(255,255,255,0.09));
+    background: var(
+        --card-background,
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.055),
+            rgba(255,255,255,0.012)
+        )
+    );
+    box-shadow: 0 15px 45px rgba(0,0,0,0.12);
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease,
+        background 0.35s ease;
+}
+
+.skill-category::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(
+        90deg,
+        #d4af37,
+        transparent 70%
+    );
+    opacity: 0.8;
+}
+
+.skill-category::after {
+    content: attr(data-number);
+    position: absolute;
+    right: -15px;
+    bottom: -40px;
+    color: var(
+        --watermark-color,
+        rgba(255,255,255,0.025)
+    );
+    font-size: 150px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -10px;
+    pointer-events: none;
+}
+
+.skill-category:hover {
+    transform: translateY(-8px);
+    border-color: rgba(212,175,55,0.38);
+    box-shadow: 0 25px 65px rgba(0,0,0,0.2);
+}
+
+
+/* =====================================================
+   NUMBER
+===================================================== */
+
+.skill-number {
+    position: relative;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    margin-bottom: 28px;
+    border-radius: 50%;
+    border: 1px solid rgba(212,175,55,0.45);
+    background: rgba(212,175,55,0.06);
+    color: #d4af37;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   CARD TITLE
+===================================================== */
+
+.skill-category h2 {
+    position: relative;
+    z-index: 2;
+    max-width: 450px;
+    color: var(--heading-color, #ffffff);
+    font-size: 28px;
+    line-height: 1.15;
+    letter-spacing: -0.8px;
+    margin-bottom: 25px;
+}
+
+
+/* =====================================================
+   SKILL TAGS
+===================================================== */
+
+.skills-list {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+.skills-list span {
+    display: inline-flex;
+    align-items: center;
+    padding: 9px 13px;
+    border-radius: 50px;
+    border: 1px solid var(
+        --tag-border,
+        rgba(255,255,255,0.1)
+    );
+    background: var(
+        --tag-background,
+        rgba(255,255,255,0.025)
+    );
+    color: var(
+        --tag-color,
+        #b8b8c0
+    );
+    font-size: 11px;
+    line-height: 1.2;
+    transition:
+        color 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+.skills-list span:hover {
+    color: #d4af37;
+    border-color: rgba(212,175,55,0.5);
+    background: rgba(212,175,55,0.08);
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   FEATURED SKILL
+===================================================== */
+
+.skill-category.featured {
+    grid-column: span 2;
+    min-height: 260px;
+    background: linear-gradient(
+        135deg,
+        rgba(212,175,55,0.09),
+        rgba(255,255,255,0.025)
+    );
+    border-color: rgba(212,175,55,0.22);
+}
+
+.skill-category.featured .skill-number {
+    background: rgba(212,175,55,0.1);
+}
+
+
+/* =====================================================
+   SKILLS STATEMENT
+===================================================== */
+
+.skills-statement {
+    padding-top: 110px;
+    padding-bottom: 120px;
+}
+
+.skills-statement-inner {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 90px;
+    padding: 70px 0;
+    border-top: 1px solid var(
+        --section-border,
+        rgba(255,255,255,0.08)
+    );
+    border-bottom: 1px solid var(
+        --section-border,
+        rgba(255,255,255,0.08)
+    );
+}
+
+.skills-statement-label {
+    color: #d4af37;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.skills-statement h2 {
+    max-width: 480px;
+    color: var(--heading-color, #ffffff);
+    font-size: clamp(35px, 4vw, 55px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+}
+
+.skills-statement-copy {
+    align-self: center;
+}
+
+.skills-statement-copy p {
+    color: var(--muted-color, #a0a0a8);
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 22px;
+}
+
+.skills-statement-copy p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =====================================================
+   HIGHLIGHTS
+===================================================== */
+
+.skill-highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.skill-highlight {
+    padding: 20px;
+    border-left: 2px solid rgba(212,175,55,0.45);
+    background: var(
+        --highlight-background,
+        rgba(255,255,255,0.018)
+    );
+}
+
+.skill-highlight strong {
+    display: block;
+    color: var(--heading-color, #ffffff);
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.skill-highlight span {
+    color: var(--small-muted, #777780);
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   PHOTO SECTION
+===================================================== */
+
+.skills-photo-section {
+    padding-top: 20px;
+    padding-bottom: 110px;
+}
+
+.skills-photo-heading {
+    max-width: 750px;
+    margin-bottom: 45px;
+}
+
+.skills-photo-heading .section-label {
+    color: #d4af37;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.skills-photo-heading h2 {
+    color: var(--heading-color, #ffffff);
+    font-size: clamp(35px, 5vw, 58px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+}
+
+.skills-photo-heading p {
+    color: var(--muted-color, #a1a1aa);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   PHOTO CARDS
+===================================================== */
+
+.skills-photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.photo-card {
+    position: relative;
+    overflow: hidden;
+    min-height: 390px;
+    border-radius: 24px;
+    border: 1px solid var(
+        --card-border,
+        rgba(255,255,255,0.09)
+    );
+    background: var(
+        --card-background,
+        rgba(255,255,255,0.025)
+    );
+    box-shadow: 0 15px 45px rgba(0,0,0,0.14);
+    cursor: pointer;
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.photo-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(212,175,55,0.42);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+}
+
+.photo-card-image {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+    background: #111;
+}
+
+.photo-card-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.photo-card:hover .photo-card-image img {
+    transform: scale(1.035);
+}
+
+
+/* Political image must show the full person */
+
+.photo-card.political .photo-card-image {
+    background: #111;
+}
+
+.photo-card.political .photo-card-image img {
+    object-fit: contain;
+    object-position: center center;
+}
+
+
+/* =====================================================
+   PHOTO INFORMATION
+===================================================== */
+
+.photo-card-content {
+    position: relative;
+    z-index: 3;
+    padding: 22px 25px 25px;
+    background: var(
+        --card-background,
+        rgba(18,18,18,0.96)
+    );
+}
+
+.photo-card-content small {
+    display: block;
+    color: #d4af37;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.photo-card-content h3 {
+    color: var(--heading-color, #ffffff);
+    font-size: 21px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.photo-card-content p {
+    color: var(--muted-color, #a1a1aa);
+    font-size: 12px;
+    line-height: 1.65;
+    margin: 0;
+}
+
+
+/* =====================================================
+   PHOTO LIGHTBOX
+===================================================== */
+
+.photo-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background: rgba(0,0,0,0.92);
+    backdrop-filter: blur(8px);
+}
+
+.photo-lightbox.active {
+    display: flex;
+}
+
+.photo-lightbox img {
+    max-width: 92vw;
+    max-height: 88vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 30px 100px rgba(0,0,0,0.65);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 22px;
+    right: 28px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-close:hover {
+    background: rgba(212,175,55,0.2);
+    border-color: rgba(212,175,55,0.6);
+    color: #d4af37;
+}
+
+
+/* =====================================================
+   LIGHT MODE
+===================================================== */
+
+body.light-mode {
+    --heading-color: #171717;
+    --muted-color: #666873;
+    --card-border: rgba(20,20,20,0.1);
+    --section-border: rgba(20,20,20,0.1);
+    --watermark-color: rgba(20,20,20,0.035);
+
+    --card-background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.95),
+            rgba(248,248,248,0.9)
+        );
+
+    --tag-border: rgba(20,20,20,0.1);
+    --tag-background: rgba(20,20,20,0.025);
+    --tag-color: #5f6068;
+    --highlight-background: rgba(20,20,20,0.025);
+    --small-muted: #74757d;
+
+    background: #f7f7f5;
+    color: #171717;
+}
+
+body.light-mode .skill-category.featured {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(212,175,55,0.12),
+            rgba(255,255,255,0.95)
+        );
+}
+
+body.light-mode .mode-toggle {
+    background: rgba(20,20,20,0.04);
+    color: #9b7915;
+    border-color: rgba(155,121,21,0.3);
+}
+
+body.light-mode .photo-card-content {
+    background: #ffffff;
+}
+
+body.light-mode .photo-card {
+    background: #ffffff;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 850px) {
+
+    .skills-page {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    .skills-page h1 {
+        font-size: 48px;
+        letter-spacing: -2px;
+    }
+
+    .skills-page .page-intro {
+        font-size: 15px;
+    }
+
+    .skills-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-category.featured {
+        grid-column: span 1;
+    }
+
+    .skills-statement-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 50px 0;
+    }
+
+    .skill-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .mode-toggle {
+        margin-left: 5px;
+    }
+
+    .skills-photo-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .skills-page h1 {
+        font-size: 40px;
+    }
+
+    .skill-category {
+        min-height: auto;
+        padding: 28px 23px;
+    }
+
+    .skill-category h2 {
+        font-size: 24px;
+    }
+
+    .skill-number {
+        margin-bottom: 22px;
+    }
+
+    .skills-list span {
+        font-size: 10px;
+        padding: 8px 11px;
+    }
+
+    .skills-statement h2 {
+        font-size: 36px;
+    }
+
+    .photo-card {
+        min-height: auto;
+    }
+
+    .photo-card-image {
+        height: 300px;
+    }
+
+    .photo-lightbox {
+        padding: 15px;
+    }
+
+    .photo-lightbox img {
+        max-width: 96vw;
+        max-height: 82vh;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     NAVIGATION
+====================================================== -->
+
+<header class="header">
+
+<nav class="navbar">
+
+    <a
+        href="index.html"
+        class="logo"
+    >
+        MSK<span>.</span>
+    </a>
+
+
+    <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+    >
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+
+    <ul
+        class="nav-links"
+        id="navLinks"
+    >
+
+        <li>
+            <a href="index.html">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="about.html">
+                About
+            </a>
+        </li>
+
+        <li>
+            <a href="impact.html">
+                Impact
+            </a>
+        </li>
+
+        <li>
+            <a href="experience.html">
+                Experience
+            </a>
+        </li>
+
+        <li>
+            <a href="portfolio.html">
+                Portfolio
+            </a>
+        </li>
+
+        <li>
+            <a href="education.html">
+                Education
+            </a>
+        </li>
+
+        <li>
+            <a
+                href="skills.html"
+                class="active"
+            >
+                Skills
+            </a>
+        </li>
+
+        <li>
+            <a href="awards.html">
+                Awards
+            </a>
+        </li>
+
+        <li>
+            <a href="contact.html">
+                Contact
+            </a>
+        </li>
+
+    </ul>
+
+
+    <!-- MODE BUTTON -->
+
+    <button
+        class="mode-toggle"
+        id="modeToggle"
+        type="button"
+        aria-label="Toggle light and dark mode"
+        title="Toggle light and dark mode"
+    >
+        ☀️
+    </button>
+
+</nav>
+
+</header>
+
+
+<!-- =====================================================
+     MAIN
+====================================================== -->
+
+<main>
+
+
+<!-- =====================================================
+     SKILLS INTRO
+====================================================== -->
+
+<section class="section skills-page">
+
+<div class="section-heading">
+
+    <p class="section-label">
+        SKILLS & EXPERTISE
+    </p>
+
+    <h1>
+        A multidisciplinary
+        skill set.
+    </h1>
+
+    <p class="page-intro">
+        A combination of communication, technical,
+        creative, educational and leadership skills
+        developed through professional practice,
+        teaching, media work and community
+        engagement.
+    </p>
+
+</div>
+
+
+<!-- =================================================
+     SKILL CATEGORIES
+================================================== -->
+
+<div class="skills-categories">
+
+
+    <!-- EDUCATION -->
+
+    <article
+        class="skill-category"
+        data-number="01"
+    >
+
+        <span class="skill-number">
+            01
+        </span>
+
+        <h2>
+            Education & Training
+        </h2>
+
+        <div class="skills-list">
+
+            <span>Teaching</span>
+            <span>ICT Training</span>
+            <span>Student Mentorship</span>
+            <span>Lesson Planning</span>
+            <span>Assessment</span>
+            <span>Skills Development</span>
+
+        </div>
+
+    </article>
+
+
+    <!-- JOURNALISM -->
+
+    <article
+        class="skill-category"
+        data-number="02"
+    >
+
+        <span class="skill-number">
+            02
+        </span>
+
+        <h2>
+            Journalism & Media
+        </h2>
+
+        <div class="skills-list">
+
+            <span>News Writing</span>
+            <span>Interviewing</span>
+            <span>Field Reporting</span>
+            <span>Storytelling</span>
+            <span>Media Coverage</span>
+            <span>Public Communication</span>
+
+        </div>
+
+    </article>
+
+
+    <!-- YOUTH DEVELOPMENT -->
+
+    <article
+        class="skill-category"
+        data-number="03"
+    >
+
+        <span class="skill-number">
+            03
+        </span>
+
+        <h2>
+            Youth Development
+        </h2>
+
+        <div class="skills-list">
+
+            <span>Youth Advocacy</span>
+            <span>Youth Mobilisation</span>
+            <span>Club Formation</span>
+            <span>Community Engagement</span>
+            <span>Youth Leadership</span>
+            <span>Project Coordination</span>
+
+        </div>
+
+    </article>
+
+
+    <!-- DIGITAL -->
+
+    <article
+        class="skill-category"
+        data-number="04"
+    >
+
+        <span class="skill-number">
+            04
+        </span>
+
+        <h2>
+            Digital & Technology
+        </h2>
+
+        <div class="skills-list">
+
+            <span>Computer Applications</span>
+            <span>Web Development</span>
+            <span>Digital Content</span>
+            <span>Website Management</span>
+            <span>Social Media</span>
+            <span>Digital Communication</span>
+
+        </div>
+
+    </article>
+
+
+    <!-- FILM -->
+
+    <article
+        class="skill-category"
+        data-number="05"
+    >
+
+        <span class="skill-number">
+            05
+        </span>
+
+        <h2>
+            Film & Creative Media
+        </h2>
+
+        <div class="skills-list">
+
+            <span>Film Production</span>
+            <span>Screenwriting</span>
+            <span>Film Direction</span>
+            <span>Story Development</span>
+            <span>Livestreaming</span>
+            <span>Content Creation</span>
+
+        </div>
+
+    </article>
+
+
+    <!-- COMMUNICATION -->
+
+    <article
+        class="skill-category"
+        data-number="06"
+    >
+
+        <span class="skill-number">
+            06
+        </span>
+
+        <h2>
+            Communication & Leadership
+        </h2>
+
+        <div class="skills-list">
+
+            <span>Public Speaking</span>
+            <span>Team Coordination</span>
+            <span>Stakeholder Engagement</span>
+            <span>Community Engagement</span>
+            <span>Organisational Communication</span>
+            <span>Leadership</span>
+
+        </div>
+
+    </article>
+
+
+    <!-- CREATIVE COMMUNICATION -->
+
+    <article
+        class="skill-category featured"
+        data-number="07"
+    >
+
+        <span class="skill-number">
+            07
+        </span>
+
+        <h2>
+            Creative Communication
+        </h2>
+
+        <div class="skills-list">
+
+            <span>Storytelling</span>
+            <span>Media Production</span>
+            <span>Visual Communication</span>
+            <span>Content Development</span>
+            <span>Public Awareness</span>
+            <span>Social Campaigns</span>
+            <span>Digital Media</span>
+
+        </div>
+
+    </article>
+
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     SKILLS STATEMENT
+====================================================== -->
+
+<section class="section skills-statement">
+
+<div class="skills-statement-inner">
+
+
+    <div>
+
+        <p class="skills-statement-label">
+            THE COMBINATION
+        </p>
+
+        <h2>
+            Technology meets
+            communication.
+        </h2>
+
+    </div>
+
+
+    <div class="skills-statement-copy">
+
+        <p>
+            My strongest advantage is the ability to
+            combine technical knowledge with
+            communication and creativity. This allows
+            me to work across education, media,
+            technology, youth development and
+            creative production.
+        </p>
+
+        <p>
+            I use these skills to turn ideas into
+            practical work — whether through
+            teaching, journalism, digital media,
+            filmmaking or youth-focused initiatives.
+        </p>
+
+
+        <div class="skill-highlights">
+
+
+            <div class="skill-highlight">
+
+                <strong>
+                    Communication
+                </strong>
+
+                <span>
+                    Clear storytelling and public
+                    communication.
+                </span>
+
+            </div>
+
+
+            <div class="skill-highlight">
+
+                <strong>
+                    Creativity
+                </strong>
+
+                <span>
+                    Turning ideas into meaningful
+                    media and stories.
+                </span>
+
+            </div>
+
+
+            <div class="skill-highlight">
+
+                <strong>
+                    Leadership
+                </strong>
+
+                <span>
+                    Bringing people and projects
+                    together.
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     ADDITIONAL PHOTO SECTION
+====================================================== -->
+
+<section class="section skills-photo-section">
+
+<div class="skills-photo-heading">
+
+    <p class="section-label">
+        BEYOND THE WORK
+    </p>
+
+    <h2>
+        The people, places and responsibilities
+        behind the work.
+    </h2>
+
+    <p>
+        Professional work is also shaped by the
+        people around me, collaborative experiences
+        and responsibilities beyond the classroom,
+        newsroom and creative space.
+    </p>
+
+</div>
+
+
+<div class="skills-photo-grid">
+
+
+    <!-- PHOTO 1 -->
+
+    <article
+        class="photo-card"
+        data-image="images/family-wife-01.jpg"
+    >
+
+        <div class="photo-card-image">
+
+            <img
+                src="images/family-wife-01.jpg"
+                alt="Mubita Siasabuzingo Kabika"
+                loading="lazy"
+            >
+
+        </div>
+
+        <div class="photo-card-content">
+
+            <small>
+                PEOPLE & CONNECTIONS
+            </small>
+
+            <h3>
+                The people behind the journey
+            </h3>
+
+            <p>
+                The support, relationships and
+                connections that continue to shape
+                the journey.
+            </p>
+
+        </div>
+
+    </article>
+
+
+    <!-- PHOTO 2 -->
+
+    <article
+        class="photo-card"
+        data-image="images/family-wife-02.jpg"
+    >
+
+        <div class="photo-card-image">
+
+            <img
+                src="images/family-wife-02.jpg"
+                alt="Mubita Siasabuzingo Kabika"
+                loading="lazy"
+            >
+
+        </div>
+
+        <div class="photo-card-content">
+
+            <small>
+                PEOPLE & CONNECTIONS
+            </small>
+
+            <h3>
+                People who support the work
+            </h3>
+
+            <p>
+                Meaningful relationships and
+                collaboration remain an important
+                part of the work.
+            </p>
+
+        </div>
+
+    </article>
+
+
+    <!-- PHOTO 3 -->
+
+    <article
+        class="photo-card"
+        data-image="images/family-wife-03.jpg"
+    >
+
+        <div class="photo-card-image">
+
+            <img
+                src="images/family-wife-03.jpg"
+                alt="Mubita Siasabuzingo Kabika"
+                loading="lazy"
+            >
+
+        </div>
+
+        <div class="photo-card-content">
+
+            <small>
+                PEOPLE & CONNECTIONS
+            </small>
+
+            <h3>
+                Building together
+            </h3>
+
+            <p>
+                Collaboration, encouragement and
+                shared experiences beyond professional
+                responsibilities.
+            </p>
+
+        </div>
+
+    </article>
+
+
+    <!-- PHOTO 4 -->
+
+    <article
+        class="photo-card"
+        data-image="images/family-brother-01.png"
+    >
+
+        <div class="photo-card-image">
+
+            <img
+                src="images/family-brother-01.png"
+                alt="Mubita Siasabuzingo Kabika"
+                loading="lazy"
+            >
+
+        </div>
+
+        <div class="photo-card-content">
+
+            <small>
+                PEOPLE & CONNECTIONS
+            </small>
+
+            <h3>
+                The people who help me work
+            </h3>
+
+            <p>
+                The journey is strengthened by
+                people who contribute, encourage
+                and work alongside me.
+            </p>
+
+        </div>
+
+    </article>
+
+
+    <!-- POLITICAL PHOTO -->
+
+    <article
+        class="photo-card political"
+        data-image="images/political-01.jpg"
+    >
+
+        <div class="photo-card-image">
+
+            <img
+                src="images/political-01.jpg"
+                alt="Mubita Siasabuzingo Kabika in UPND regalia"
+                loading="lazy"
+            >
+
+        </div>
+
+        <div class="photo-card-content">
+
+            <small>
+                CIVIC & POLITICAL COMMUNICATION
+            </small>
+
+            <h3>
+                Choma Central Information and Publicity Secretary
+            </h3>
+
+            <p>
+                Current Choma Central Information and
+                Publicity Secretary in Charge of Media
+                (IPS-Media), United Party for National
+                Development (UPND), 2025 to date.
+            </p>
+
+        </div>
+
+    </article>
+
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<!-- =====================================================
+     PHOTO LIGHTBOX
+====================================================== -->
+
+<div
+    class="photo-lightbox"
+    id="photoLightbox"
+    aria-hidden="true"
+>
+
+    <button
+        class="lightbox-close"
+        id="lightboxClose"
+        type="button"
+        aria-label="Close image"
+    >
+        ×
+    </button>
+
+    <img
+        id="lightboxImage"
+        src=""
+        alt="Expanded photograph"
+    >
+
+</div>
+
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
+
+<footer class="footer">
+
+<div>
+
+    <strong>
+        Mubita Siasabuzingo Kabika
+    </strong>
+
+    <p>
+        Lecturer • Journalist • Creative
+    </p>
+
+</div>
+
+
+<p>
+
+    ©
+
+    <span id="year"></span>
+
+    Mubita Siasabuzingo Kabika
+
+</p>
+
+</footer>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script src="js/script.js"></script>
+
+<script>
+
+/* =====================================================
+   LIGHT / DARK MODE
+===================================================== */
+
+const modeToggle =
+    document.getElementById("modeToggle");
+
+
+function updateModeIcon() {
+
+    if (
+        document.body.classList.contains(
+            "light-mode"
+        )
+    ) {
+
+        modeToggle.textContent = "🌙";
+
+        modeToggle.setAttribute(
+            "title",
+            "Switch to dark mode"
+        );
+
+    } else {
+
+        modeToggle.textContent = "☀️";
+
+        modeToggle.setAttribute(
+            "title",
+            "Switch to light mode"
+        );
+
+    }
+
+}
+
+
+modeToggle.addEventListener(
+    "click",
+    function () {
+
+        document.body.classList.toggle(
+            "light-mode"
+        );
+
+        localStorage.setItem(
+            "portfolioMode",
+            document.body.classList.contains(
+                "light-mode"
+            )
+                ? "light"
+                : "dark"
+        );
+
+        updateModeIcon();
+
+    }
+);
+
+
+/* =====================================================
+   REMEMBER MODE
+===================================================== */
+
+const savedMode =
+    localStorage.getItem(
+        "portfolioMode"
+    );
+
+
+if (savedMode === "light") {
+
+    document.body.classList.add(
+        "light-mode"
+    );
+
+}
+
+updateModeIcon();
+
+
+/* =====================================================
+   FOOTER YEAR
+===================================================== */
+
+const yearElement =
+    document.getElementById("year");
+
+if (yearElement) {
+
+    yearElement.textContent =
+        new Date().getFullYear();
+
+}
+
+
+/* =====================================================
+   PHOTO LIGHTBOX
+===================================================== */
+
+const photoCards =
+    document.querySelectorAll(
+        ".photo-card"
+    );
+
+const photoLightbox =
+    document.getElementById(
+        "photoLightbox"
+    );
+
+const lightboxImage =
+    document.getElementById(
+        "lightboxImage"
+    );
+
+const lightboxClose =
+    document.getElementById(
+        "lightboxClose"
+    );
+
+
+photoCards.forEach(function(card) {
+
+    card.addEventListener(
+        "click",
+        function() {
+
+            const image =
+                card.getAttribute(
+                    "data-image"
+                );
+
+            if (!image) return;
+
+            lightboxImage.src = image;
+
+            photoLightbox.classList.add(
+                "active"
+            );
+
+            photoLightbox.setAttribute(
+                "aria-hidden",
+                "false"
+            );
+
+            document.body.style.overflow =
+                "hidden";
+
+        }
+    );
+
+});
+
+
+function closeLightbox() {
+
+    photoLightbox.classList.remove(
+        "active"
+    );
+
+    photoLightbox.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+    lightboxImage.src = "";
+
+    document.body.style.overflow = "";
+
+}
+
+
+lightboxClose.addEventListener(
+    "click",
+    closeLightbox
+);
+
+
+photoLightbox.addEventListener(
+    "click",
+    function(event) {
+
+        if (
+            event.target ===
+            photoLightbox
+        ) {
+
+            closeLightbox();
+
+        }
+
+    }
+);
+
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (
+            event.key === "Escape" &&
+            photoLightbox.classList.contains(
+                "active"
+            )
+        ) {
+
+            closeLightbox();
+
+        }
+
+    }
+);
+
+</script>
+
+
+</body>
+</html>

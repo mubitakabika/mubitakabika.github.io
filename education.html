@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Education, academic background and professional training of Mubita Siasabuzingo Kabika."
+    >
+
+    <meta
+        name="author"
+        content="Mubita Siasabuzingo Kabika"
+    >
+
+    <title>
+        Education | Mubita Siasabuzingo Kabika
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <style>
+
+        /* =====================================================
+           EDUCATION PAGE
+        ===================================================== */
+
+        .education-page {
+            padding-top: 120px;
+            padding-bottom: 100px;
+        }
+
+        /* =====================================================
+           INTRO
+        ===================================================== */
+
+        .education-page .section-heading {
+            max-width: 920px;
+            margin-bottom: 75px;
+        }
+
+        .education-page .section-label {
+            color: #b88a20;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 3.5px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .education-page h1 {
+            max-width: 850px;
+            font-size: clamp(46px, 6vw, 78px);
+            line-height: 1.02;
+            letter-spacing: -3.5px;
+            margin-bottom: 28px;
+        }
+
+        .education-page .page-intro {
+            max-width: 740px;
+            color: #666873;
+            font-size: 17px;
+            line-height: 1.9;
+        }
+
+        /* =====================================================
+           EDUCATION SUMMARY
+        ===================================================== */
+
+        .education-summary {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+            margin-bottom: 90px;
+        }
+
+        .education-stat {
+            position: relative;
+            overflow: hidden;
+            padding: 30px 28px;
+            min-height: 145px;
+
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: 20px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(255,255,255,0.95),
+                    rgba(247,247,247,0.95)
+                );
+
+            box-shadow:
+                0 12px 35px rgba(0,0,0,0.05);
+
+            transition:
+                transform 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+        .education-stat::after {
+            content: "";
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            right: -35px;
+            top: -35px;
+            border-radius: 50%;
+            border: 1px solid rgba(184,138,32,0.18);
+        }
+
+        .education-stat:hover {
+            transform: translateY(-5px);
+            border-color: rgba(184,138,32,0.35);
+            box-shadow:
+                0 18px 45px rgba(0,0,0,0.09);
+        }
+
+        .education-stat span {
+            display: block;
+            color: #b88a20;
+            font-size: 9px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+
+        .education-stat strong {
+            display: block;
+            color: #18181b;
+            font-size: 20px;
+            line-height: 1.35;
+            letter-spacing: -0.4px;
+        }
+
+        /* =====================================================
+           TIMELINE
+        ===================================================== */
+
+        .academic-timeline {
+            position: relative;
+            max-width: 1050px;
+            margin: 0 auto;
+        }
+
+        .academic-timeline::before {
+            content: "";
+            position: absolute;
+            left: 24px;
+            top: 8px;
+            bottom: 8px;
+            width: 1px;
+
+            background:
+                linear-gradient(
+                    to bottom,
+                    rgba(184,138,32,0.7),
+                    rgba(0,0,0,0.08),
+                    transparent
+                );
+        }
+
+        /* =====================================================
+           TIMELINE ITEM
+        ===================================================== */
+
+        .academic-item {
+            position: relative;
+            display: grid;
+            grid-template-columns: 49px 1fr;
+            gap: 30px;
+            padding-bottom: 38px;
+        }
+
+        .academic-item:last-child {
+            padding-bottom: 0;
+        }
+
+        /* =====================================================
+           TIMELINE NUMBER
+        ===================================================== */
+
+        .academic-dot {
+            position: relative;
+            z-index: 3;
+
+            width: 49px;
+            height: 49px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: #ffffff;
+
+            border: 1px solid rgba(184,138,32,0.55);
+
+            color: #b88a20;
+
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 1px;
+
+            box-shadow:
+                0 0 0 8px #ffffff,
+                0 8px 25px rgba(0,0,0,0.08);
+        }
+
+        /* =====================================================
+           ACADEMIC CARD
+        ===================================================== */
+
+        .academic-content {
+            position: relative;
+            overflow: hidden;
+
+            padding: 34px 38px;
+
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: 22px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #ffffff,
+                    #f8f8f8
+                );
+
+            box-shadow:
+                0 12px 38px rgba(0,0,0,0.045);
+
+            transition:
+                transform 0.35s ease,
+                border-color 0.35s ease,
+                box-shadow 0.35s ease;
+        }
+
+        .academic-content::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3px;
+            height: 100%;
+
+            background:
+                linear-gradient(
+                    to bottom,
+                    #b88a20,
+                    transparent
+                );
+
+            opacity: 0.7;
+        }
+
+        .academic-content:hover {
+            transform: translateX(7px);
+
+            border-color:
+                rgba(184,138,32,0.3);
+
+            box-shadow:
+                0 20px 50px rgba(0,0,0,0.09);
+        }
+
+        /* =====================================================
+           STATUS
+        ===================================================== */
+
+        .academic-status {
+            display: inline-block;
+
+            color: #b88a20;
+
+            font-size: 9px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+            margin-bottom: 13px;
+        }
+
+        .academic-year {
+            float: right;
+
+            color: #85858d;
+
+            font-size: 9px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        /* =====================================================
+           CARD TITLE
+        ===================================================== */
+
+        .academic-content h3 {
+            color: #17171a;
+
+            font-size: 28px;
+            line-height: 1.2;
+            letter-spacing: -0.8px;
+
+            margin-bottom: 9px;
+        }
+
+        /* =====================================================
+           INSTITUTION
+        ===================================================== */
+
+        .academic-institution {
+            color: #555861;
+
+            font-size: 14px;
+            font-weight: 700;
+
+            margin-bottom: 18px;
+        }
+
+        /* =====================================================
+           DESCRIPTION
+        ===================================================== */
+
+        .academic-content > p:not(.academic-institution) {
+            max-width: 760px;
+
+            color: #666873;
+
+            font-size: 14px;
+            line-height: 1.9;
+        }
+
+        /* =====================================================
+           LEADERSHIP BADGE
+        ===================================================== */
+
+        .leadership-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+
+            margin-top: 20px;
+            padding: 9px 14px;
+
+            border-radius: 50px;
+
+            background:
+                rgba(184,138,32,0.07);
+
+            border: 1px solid
+                rgba(184,138,32,0.2);
+
+            color: #9b7318;
+
+            font-size: 9px;
+            font-weight: 800;
+            letter-spacing: 1.3px;
+            text-transform: uppercase;
+        }
+
+        .leadership-badge::before {
+            content: "";
+
+            width: 6px;
+            height: 6px;
+
+            border-radius: 50%;
+
+            background: #b88a20;
+        }
+
+        /* =====================================================
+           GRADUATION IMAGE
+        ===================================================== */
+
+        .graduation-image {
+            width: 100%;
+            margin-top: 28px;
+            border-radius: 18px;
+            overflow: hidden;
+
+            border: 1px solid
+                rgba(184,138,32,0.18);
+
+            background: #eeeeee;
+
+            box-shadow:
+                0 15px 40px rgba(0,0,0,0.08);
+        }
+
+        .graduation-image img {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-height: 520px;
+
+            object-fit: cover;
+
+            transition:
+                transform 0.5s ease;
+        }
+
+        .graduation-image:hover img {
+            transform: scale(1.02);
+        }
+
+        .graduation-caption {
+            padding: 13px 16px;
+
+            color: #777780;
+
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+
+            background:
+                rgba(184,138,32,0.045);
+        }
+
+        /* =====================================================
+           CURRENT STUDIES
+        ===================================================== */
+
+        .current-study {
+            position: relative;
+            overflow: hidden;
+
+            margin-top: 30px;
+            padding: 32px;
+
+            border-radius: 20px;
+
+            border: 1px solid
+                rgba(184,138,32,0.25);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(184,138,32,0.08),
+                    rgba(255,255,255,0.8)
+                );
+        }
+
+        .current-study::after {
+            content: "NOW";
+
+            position: absolute;
+
+            right: -10px;
+            bottom: -30px;
+
+            color:
+                rgba(184,138,32,0.045);
+
+            font-size: 110px;
+            font-weight: 900;
+            letter-spacing: -8px;
+        }
+
+        .current-study-label {
+            position: relative;
+            z-index: 2;
+
+            color: #b88a20;
+
+            font-size: 9px;
+            font-weight: 800;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+
+            margin-bottom: 13px;
+        }
+
+        .current-study h3 {
+            position: relative;
+            z-index: 2;
+
+            color: #19191c;
+
+            font-size: 29px;
+            line-height: 1.15;
+            letter-spacing: -0.8px;
+
+            margin-bottom: 10px;
+        }
+
+        .current-study p:last-child {
+            position: relative;
+            z-index: 2;
+
+            max-width: 700px;
+
+            color: #676972;
+
+            font-size: 14px;
+            line-height: 1.85;
+        }
+
+        /* =====================================================
+           EDUCATION PHILOSOPHY
+        ===================================================== */
+
+        .education-philosophy {
+            padding-top: 105px;
+            padding-bottom: 110px;
+        }
+
+        .education-philosophy-inner {
+            display: grid;
+
+            grid-template-columns:
+                0.8fr 1.2fr;
+
+            gap: 90px;
+
+            padding: 65px 0;
+
+            border-top: 1px solid
+                rgba(0,0,0,0.08);
+
+            border-bottom: 1px solid
+                rgba(0,0,0,0.08);
+        }
+
+        .philosophy-label {
+            color: #b88a20;
+
+            font-size: 9px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+
+            margin-bottom: 18px;
+        }
+
+        .education-philosophy h2 {
+            max-width: 440px;
+
+            color: #18181b;
+
+            font-size:
+                clamp(35px, 4vw, 53px);
+
+            line-height: 1.05;
+            letter-spacing: -2px;
+        }
+
+        .philosophy-copy p {
+            color: #666873;
+
+            font-size: 16px;
+            line-height: 1.9;
+
+            margin-bottom: 22px;
+        }
+
+        .philosophy-copy p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* =====================================================
+           DARK MODE
+        ===================================================== */
+
+        body.dark-mode .education-page .section-label,
+        body.dark-mode .philosophy-label {
+            color: #d4af37;
+        }
+
+        body.dark-mode .education-page .page-intro {
+            color: #a1a1aa;
+        }
+
+        body.dark-mode .education-stat {
+            border-color:
+                rgba(255,255,255,0.08);
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(255,255,255,0.055),
+                    rgba(255,255,255,0.018)
+                );
+
+            box-shadow:
+                0 12px 35px rgba(0,0,0,0.2);
+        }
+
+        body.dark-mode .education-stat strong {
+            color: #ffffff;
+        }
+
+        body.dark-mode .academic-timeline::before {
+            background:
+                linear-gradient(
+                    to bottom,
+                    rgba(212,175,55,0.7),
+                    rgba(255,255,255,0.08),
+                    transparent
+                );
+        }
+
+        body.dark-mode .academic-dot {
+            background: #0b0b0d;
+
+            border-color:
+                rgba(212,175,55,0.55);
+
+            color: #d4af37;
+
+            box-shadow:
+                0 0 0 8px #0b0b0d,
+                0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        body.dark-mode .academic-content {
+            border-color:
+                rgba(255,255,255,0.08);
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(255,255,255,0.055),
+                    rgba(255,255,255,0.018)
+                );
+
+            box-shadow:
+                0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        body.dark-mode .academic-content h3 {
+            color: #ffffff;
+        }
+
+        body.dark-mode .academic-institution {
+            color: #d0d0d6;
+        }
+
+        body.dark-mode
+        .academic-content > p:not(.academic-institution) {
+            color: #9e9ea7;
+        }
+
+        body.dark-mode .academic-year {
+            color: #777780;
+        }
+
+        body.dark-mode .leadership-badge {
+            color: #d4af37;
+
+            background:
+                rgba(212,175,55,0.07);
+
+            border-color:
+                rgba(212,175,55,0.18);
+        }
+
+        body.dark-mode .graduation-image {
+            border-color:
+                rgba(212,175,55,0.22);
+
+            background: #111113;
+
+            box-shadow:
+                0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        body.dark-mode .graduation-caption {
+            color: #85858e;
+
+            background:
+                rgba(212,175,55,0.06);
+        }
+
+        body.dark-mode .current-study {
+            border-color:
+                rgba(212,175,55,0.25);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(212,175,55,0.09),
+                    rgba(255,255,255,0.025)
+                );
+        }
+
+        body.dark-mode .current-study h3 {
+            color: #ffffff;
+        }
+
+        body.dark-mode .current-study p:last-child {
+            color: #a2a2aa;
+        }
+
+        body.dark-mode .education-philosophy-inner {
+            border-color:
+                rgba(255,255,255,0.08);
+        }
+
+        body.dark-mode .education-philosophy h2 {
+            color: #ffffff;
+        }
+
+        body.dark-mode .philosophy-copy p {
+            color: #a0a0a8;
+        }
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media (max-width: 800px) {
+
+            .education-page {
+                padding-top: 80px;
+                padding-bottom: 70px;
+            }
+
+            .education-page h1 {
+                font-size: 45px;
+                letter-spacing: -2.5px;
+            }
+
+            .education-page .page-intro {
+                font-size: 15px;
+            }
+
+            .education-summary {
+                grid-template-columns: 1fr;
+                margin-bottom: 65px;
+            }
+
+            .academic-timeline::before {
+                left: 19px;
+            }
+
+            .academic-item {
+                grid-template-columns: 40px 1fr;
+                gap: 18px;
+                padding-bottom: 30px;
+            }
+
+            .academic-dot {
+                width: 39px;
+                height: 39px;
+                font-size: 9px;
+            }
+
+            .academic-content {
+                padding: 27px 23px;
+            }
+
+            .academic-content h3 {
+                font-size: 23px;
+            }
+
+            .academic-year {
+                float: none;
+                display: block;
+
+                margin-top: 5px;
+                margin-bottom: 14px;
+            }
+
+            .graduation-image {
+                margin-top: 24px;
+            }
+
+            .graduation-image img {
+                max-height: 400px;
+            }
+
+            .current-study {
+                padding: 27px 22px;
+            }
+
+            .current-study h3 {
+                font-size: 25px;
+            }
+
+            .education-philosophy-inner {
+                grid-template-columns: 1fr;
+                gap: 35px;
+                padding: 45px 0;
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            .education-page h1 {
+                font-size: 39px;
+            }
+
+            .education-stat strong {
+                font-size: 18px;
+            }
+
+            .academic-content {
+                padding: 24px 20px;
+            }
+
+            .academic-content p {
+                font-size: 13px;
+            }
+
+            .graduation-image img {
+                max-height: 300px;
+            }
+
+            .current-study h3 {
+                font-size: 23px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+                MSK<span>.</span>
+            </a>
+
+            <!-- MOBILE MENU -->
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                type="button"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- NAVIGATION -->
+
+            <ul
+                class="nav-links"
+                id="navLinks"
+            >
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="impact.html">
+                        Impact
+                    </a>
+                </li>
+
+                <li>
+                    <a href="experience.html">
+                        Experience
+                    </a>
+                </li>
+
+                <li>
+                    <a href="portfolio.html">
+                        Portfolio
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="education.html"
+                        class="active"
+                    >
+                        Education
+                    </a>
+                </li>
+
+                <li>
+                    <a href="skills.html">
+                        Skills
+                    </a>
+                </li>
+
+                <li>
+                    <a href="awards.html">
+                        Awards
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- MODE TOGGLE -->
+
+            <button
+                class="mode-toggle"
+                id="modeToggle"
+                type="button"
+                aria-label="Toggle light and dark mode"
+                title="Toggle light and dark mode"
+            >
+                <span
+                    class="mode-icon"
+                    id="modeIcon"
+                >
+                    ☀
+                </span>
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+
+        <!-- =================================================
+             EDUCATION INTRO
+        ================================================== -->
+
+        <section class="section education-page">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    EDUCATION & DEVELOPMENT
+                </p>
+
+                <h1>
+                    Learning,
+                    leadership & continuous growth.
+                </h1>
+
+                <p class="page-intro">
+                    My academic journey has developed across
+                    education, teaching, journalism and public
+                    relations, supported by practical experience
+                    and continuous professional learning.
+                </p>
+
+            </div>
+
+
+            <!-- =================================================
+                 EDUCATION SUMMARY
+            ================================================== -->
+
+            <div class="education-summary">
+
+                <div class="education-stat">
+
+                    <span>
+                        Secondary Education
+                    </span>
+
+                    <strong>
+                        Swan Secondary School
+                    </strong>
+
+                </div>
+
+
+                <div class="education-stat">
+
+                    <span>
+                        Teaching Qualification
+                    </span>
+
+                    <strong>
+                        Diploma in Secondary Teaching
+                    </strong>
+
+                </div>
+
+
+                <div class="education-stat">
+
+                    <span>
+                        Current Studies
+                    </span>
+
+                    <strong>
+                        Journalism & Public Relations
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 ACADEMIC TIMELINE
+            ================================================== -->
+
+            <div class="academic-timeline">
+
+
+                <!-- =================================================
+                     01 — PRIMARY EDUCATION
+                ================================================== -->
+
+                <article class="academic-item">
+
+                    <div class="academic-dot">
+                        01
+                    </div>
+
+                    <div class="academic-content">
+
+                        <div class="academic-top">
+
+                            <span class="academic-status">
+                                PRIMARY EDUCATION
+                            </span>
+
+                            <span class="academic-year">
+                                FOUNDATION
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Swan Secondary School
+                        </h3>
+
+                        <p class="academic-institution">
+                            Primary Education
+                        </p>
+
+                        <p>
+                            Completed my primary education at
+                            Swan Secondary School, beginning
+                            the academic journey that would
+                            continue through junior and senior
+                            secondary education at the same
+                            institution.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     02 — JUNIOR SECONDARY
+                ================================================== -->
+
+                <article class="academic-item">
+
+                    <div class="academic-dot">
+                        02
+                    </div>
+
+                    <div class="academic-content">
+
+                        <div class="academic-top">
+
+                            <span class="academic-status">
+                                JUNIOR SECONDARY
+                            </span>
+
+                            <span class="academic-year">
+                                SECONDARY EDUCATION
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Swan Secondary School
+                        </h3>
+
+                        <p class="academic-institution">
+                            Junior Secondary Education
+                        </p>
+
+                        <p>
+                            Continued my education at the same
+                            school through junior secondary,
+                            building the academic foundation
+                            for senior secondary studies.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     03 — SENIOR SECONDARY
+                ================================================== -->
+
+                <article class="academic-item">
+
+                    <div class="academic-dot">
+                        03
+                    </div>
+
+                    <div class="academic-content">
+
+                        <div class="academic-top">
+
+                            <span class="academic-status">
+                                SENIOR SECONDARY
+                            </span>
+
+                            <span class="academic-year">
+                                COMPLETED
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Swan Secondary School
+                        </h3>
+
+                        <p class="academic-institution">
+                            Senior Secondary Education
+                        </p>
+
+                        <p>
+                            Completed my senior secondary education
+                            at Swan Secondary School, developing
+                            the academic foundation that prepared
+                            me for professional training and
+                            continued studies.
+                        </p>
+
+                        <div class="leadership-badge">
+                            Former Vice Headboy
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     04 — MANSFIELD UNIVERSITY
+                ================================================== -->
+
+                <article class="academic-item">
+
+                    <div class="academic-dot">
+                        04
+                    </div>
+
+                    <div class="academic-content">
+
+                        <div class="academic-top">
+
+                            <span class="academic-status">
+                                PROFESSIONAL QUALIFICATION
+                            </span>
+
+                            <span class="academic-year">
+                                COMPLETED
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Mansfield University
+                        </h3>
+
+                        <p class="academic-institution">
+                            Diploma in Secondary Teaching
+                        </p>
+
+                        <p>
+                            Pursued professional teacher training,
+                            developing pedagogical knowledge,
+                            classroom practice and practical
+                            teaching skills that continue to
+                            support my work in education and
+                            skills development.
+                        </p>
+
+
+                        <!-- =================================================
+                             GRADUATION PHOTO
+                        ================================================== -->
+
+                        <div class="graduation-image">
+
+                            <img
+                                src="images/graduation-01.jpg"
+                                alt="Mubita Siasabuzingo Kabika at graduation"
+                                loading="lazy"
+                            >
+
+                            <div class="graduation-caption">
+                                Graduation • Mansfield University
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     05 — ZAMCOM
+                ================================================== -->
+
+                <article class="academic-item">
+
+                    <div class="academic-dot">
+                        05
+                    </div>
+
+                    <div class="academic-content">
+
+                        <div class="academic-top">
+
+                            <span class="academic-status">
+                                CURRENTLY PURSUING
+                            </span>
+
+                            <span class="academic-year">
+                                PRESENT
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Zambia Institute of Mass Communication
+                            (ZAMCOM)
+                        </h3>
+
+                        <p class="academic-institution">
+                            Degree in Journalism & Public Relations
+                        </p>
+
+                        <p>
+                            Currently pursuing a degree in
+                            Journalism and Public Relations,
+                            strengthening my knowledge in
+                            journalism, communication, public
+                            relations and media practice.
+                        </p>
+
+                        <div class="current-study">
+
+                            <p class="current-study-label">
+                                CURRENT ACADEMIC FOCUS
+                            </p>
+
+                            <h3>
+                                Journalism +
+                                Public Relations
+                            </h3>
+
+                            <p>
+                                Continuing to build professional
+                                expertise in journalism,
+                                communication, public relations
+                                and media while applying academic
+                                knowledge through practical
+                                professional work.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             EDUCATION PHILOSOPHY
+        ====================================================== -->
+
+        <section class="section education-philosophy">
+
+            <div class="education-philosophy-inner">
+
+                <div>
+
+                    <p class="philosophy-label">
+                        MY PHILOSOPHY
+                    </p>
+
+                    <h2>
+                        Learning should
+                        lead to action.
+                    </h2>
+
+                </div>
+
+
+                <div class="philosophy-copy">
+
+                    <p>
+                        I believe education becomes more valuable
+                        when knowledge can be translated into
+                        practical skills and meaningful work.
+                    </p>
+
+                    <p>
+                        My journey from primary and secondary
+                        education, through teacher training and
+                        into journalism and public relations,
+                        reflects a commitment to continuous
+                        learning and professional growth.
+                    </p>
+
+                    <p>
+                        I continue to learn through formal
+                        education, professional practice,
+                        journalism, teaching, creative projects
+                        and engagement with communities.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div>
+
+            <strong>
+                Mubita Siasabuzingo Kabika
+            </strong>
+
+            <p>
+                Lecturer • Journalist • Creative
+            </p>
+
+        </div>
+
+        <p>
+            ©
+            <span id="year"></span>
+            Mubita Siasabuzingo Kabika
+        </p>
+
+    </footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/script.js"></script>
+
+    <script>
+
+        /* =====================================================
+           EDUCATION PAGE MODE TOGGLE
+        ===================================================== */
+
+        const modeToggle =
+            document.getElementById("modeToggle");
+
+        const modeIcon =
+            document.getElementById("modeIcon");
+
+
+        function updateModeIcon() {
+
+            if (
+                document.body.classList.contains(
+                    "dark-mode"
+                )
+            ) {
+
+                modeIcon.textContent = "☀";
+
+                modeToggle.setAttribute(
+                    "aria-label",
+                    "Switch to light mode"
+                );
+
+                modeToggle.setAttribute(
+                    "title",
+                    "Switch to light mode"
+                );
+
+            } else {
+
+                modeIcon.textContent = "☾";
+
+                modeToggle.setAttribute(
+                    "aria-label",
+                    "Switch to dark mode"
+                );
+
+                modeToggle.setAttribute(
+                    "title",
+                    "Switch to dark mode"
+                );
+
+            }
+
+        }
+
+
+        if (modeToggle) {
+
+            modeToggle.addEventListener(
+                "click",
+                () => {
+
+                    document.body.classList.toggle(
+                        "dark-mode"
+                    );
+
+                    localStorage.setItem(
+                        "theme",
+                        document.body.classList.contains(
+                            "dark-mode"
+                        )
+                            ? "dark"
+                            : "light"
+                    );
+
+                    updateModeIcon();
+
+                }
+            );
+
+        }
+
+
+        /* =====================================================
+           LOAD SAVED MODE
+        ===================================================== */
+
+        const savedTheme =
+            localStorage.getItem("theme");
+
+        if (savedTheme === "dark") {
+
+            document.body.classList.add(
+                "dark-mode"
+            );
+
+        }
+
+        updateModeIcon();
+
+
+        /* =====================================================
+           CURRENT YEAR
+        ===================================================== */
+
+        const yearElement =
+            document.getElementById("year");
+
+        if (yearElement) {
+
+            yearElement.textContent =
+                new Date().getFullYear();
+
+        }
+
+    </script>
+
+</body>
+
+</html>

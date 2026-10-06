@@ -1,0 +1,1928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Portfolio of Mubita Siasabuzingo Kabika — journalism, media, film, youth development and creative work."
+    >
+
+    <meta
+        name="author"
+        content="Mubita Siasabuzingo Kabika"
+    >
+
+    <title>
+        Portfolio | Mubita Siasabuzingo Kabika
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+
+    <style>
+
+        /* =====================================================
+           PORTFOLIO PAGE
+        ===================================================== */
+
+        .portfolio-page {
+            padding-top: 120px;
+            padding-bottom: 100px;
+        }
+
+        .portfolio-page .section-heading {
+            max-width: 900px;
+            margin-bottom: 60px;
+        }
+
+        .portfolio-page .section-label {
+            color: #d4af37;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        .portfolio-page h1 {
+            max-width: 850px;
+            font-size: clamp(46px, 7vw, 82px);
+            line-height: 0.98;
+            letter-spacing: -4px;
+            margin-bottom: 28px;
+        }
+
+        .portfolio-page .page-intro {
+            max-width: 720px;
+            color: #a7a7b0;
+            font-size: 17px;
+            line-height: 1.85;
+        }
+
+
+        /* =====================================================
+           LIGHT MODE
+        ===================================================== */
+
+        body:not(.dark-mode) .portfolio-page .page-intro {
+            color: #55555e;
+        }
+
+        body:not(.dark-mode) .portfolio-card,
+        body:not(.dark-mode) .featured-project {
+            background: #ffffff;
+            border-color: rgba(0,0,0,0.09);
+        }
+
+        body:not(.dark-mode) .portfolio-info h3,
+        body:not(.dark-mode) .featured-content h2,
+        body:not(.dark-mode) .film-title,
+        body:not(.dark-mode) .statement-inner h2 {
+            color: #151518;
+        }
+
+        body:not(.dark-mode) .portfolio-info > p:last-child,
+        body:not(.dark-mode) .featured-content > p,
+        body:not(.dark-mode) .statement-copy p {
+            color: #5f6068;
+        }
+
+        body:not(.dark-mode) .portfolio-filter button {
+            color: #55555d;
+            border-color: rgba(0,0,0,0.12);
+            background: rgba(0,0,0,0.025);
+        }
+
+        body:not(.dark-mode) .portfolio-filter button:hover,
+        body:not(.dark-mode) .portfolio-filter button.active {
+            color: #9a7710;
+            background: rgba(212,175,55,0.10);
+            border-color: rgba(180,140,20,0.45);
+        }
+
+        body:not(.dark-mode) .film-list {
+            border-color: rgba(0,0,0,0.09);
+        }
+
+        body:not(.dark-mode) .film-item {
+            border-color: rgba(0,0,0,0.09);
+        }
+
+        body:not(.dark-mode) .film-credit {
+            color: #66666f;
+        }
+
+        body:not(.dark-mode) .statement-inner {
+            border-color: rgba(0,0,0,0.09);
+        }
+
+
+        /* =====================================================
+           THEME TOGGLE
+        ===================================================== */
+
+        .theme-toggle {
+            width: 42px;
+            height: 42px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+            border: 1px solid rgba(255,255,255,0.12);
+
+            background: rgba(255,255,255,0.045);
+
+            color: #d4af37;
+
+            font-size: 18px;
+
+            cursor: pointer;
+
+            transition:
+                transform 0.25s ease,
+                background 0.25s ease,
+                border-color 0.25s ease;
+        }
+
+        .theme-toggle:hover {
+            transform: rotate(12deg) scale(1.05);
+
+            background: rgba(212,175,55,0.10);
+
+            border-color: rgba(212,175,55,0.45);
+        }
+
+        body:not(.dark-mode) .theme-toggle {
+            border-color: rgba(0,0,0,0.12);
+            background: rgba(0,0,0,0.035);
+            color: #8d6b09;
+        }
+
+
+        /* =====================================================
+           PORTFOLIO FILTER
+        ===================================================== */
+
+        .portfolio-filter {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 42px;
+        }
+
+        .portfolio-filter button {
+            appearance: none;
+
+            border: 1px solid rgba(255,255,255,0.10);
+
+            background: rgba(255,255,255,0.025);
+
+            color: #9d9da5;
+
+            padding: 11px 18px;
+
+            border-radius: 50px;
+
+            font-family: inherit;
+            font-size: 10px;
+            font-weight: 800;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+
+            cursor: pointer;
+
+            transition:
+                background 0.25s ease,
+                color 0.25s ease,
+                border-color 0.25s ease,
+                transform 0.25s ease;
+        }
+
+        .portfolio-filter button:hover {
+            transform: translateY(-2px);
+        }
+
+        .portfolio-filter button:hover,
+        .portfolio-filter button.active {
+            background: rgba(212,175,55,0.10);
+
+            color: #d4af37;
+
+            border-color: rgba(212,175,55,0.45);
+        }
+
+
+        /* =====================================================
+           FEATURED PROJECT
+        ===================================================== */
+
+        .featured-project {
+            position: relative;
+
+            display: grid;
+
+            grid-template-columns: 1.1fr 0.9fr;
+
+            min-height: 450px;
+
+            margin-bottom: 75px;
+
+            overflow: hidden;
+
+            border: 1px solid rgba(255,255,255,0.09);
+
+            border-radius: 28px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(212,175,55,0.075),
+                    rgba(255,255,255,0.025)
+                );
+
+            box-shadow:
+                0 25px 70px rgba(0,0,0,0.16);
+        }
+
+
+        /* =====================================================
+           FEATURED VISUAL
+        ===================================================== */
+
+        .featured-visual {
+            position: relative;
+
+            min-height: 450px;
+
+            display: flex;
+
+            align-items: flex-end;
+
+            padding: 45px;
+
+            background:
+                radial-gradient(
+                    circle at 25% 25%,
+                    rgba(212,175,55,0.20),
+                    transparent 40%
+                ),
+                linear-gradient(
+                    145deg,
+                    #181818,
+                    #070707
+                );
+
+            overflow: hidden;
+        }
+
+        .featured-visual::before {
+            content: "FILM";
+
+            position: absolute;
+
+            top: 35px;
+            left: 40px;
+
+            color: rgba(255,255,255,0.055);
+
+            font-size: 110px;
+
+            font-weight: 900;
+
+            letter-spacing: -8px;
+        }
+
+        .featured-visual::after {
+            content: "";
+
+            position: absolute;
+
+            width: 300px;
+            height: 300px;
+
+            right: -120px;
+            top: -110px;
+
+            border-radius: 50%;
+
+            border: 1px solid rgba(212,175,55,0.25);
+
+            box-shadow:
+                0 0 0 35px rgba(212,175,55,0.025),
+                0 0 0 70px rgba(212,175,55,0.015);
+        }
+
+        .featured-visual-text {
+            position: relative;
+            z-index: 2;
+        }
+
+        .featured-visual-text span {
+            display: block;
+
+            color: #d4af37;
+
+            font-size: 10px;
+
+            font-weight: 800;
+
+            letter-spacing: 3px;
+
+            margin-bottom: 13px;
+        }
+
+        .featured-visual-text strong {
+            display: block;
+
+            color: #ffffff;
+
+            font-size: clamp(45px, 6vw, 75px);
+
+            line-height: 0.90;
+
+            letter-spacing: -4px;
+        }
+
+        .featured-visual-text small {
+            display: block;
+
+            margin-top: 20px;
+
+            color: rgba(255,255,255,0.60);
+
+            font-size: 10px;
+
+            font-weight: 700;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+        }
+
+
+        /* =====================================================
+           FEATURED CONTENT
+        ===================================================== */
+
+        .featured-content {
+            padding: 58px 50px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+        }
+
+        .featured-content .project-label {
+            color: #d4af37;
+
+            font-size: 10px;
+
+            font-weight: 800;
+
+            letter-spacing: 2.5px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 18px;
+        }
+
+        .featured-content h2 {
+            color: #ffffff;
+
+            font-size: clamp(34px, 4vw, 52px);
+
+            line-height: 1.03;
+
+            letter-spacing: -2px;
+
+            margin-bottom: 22px;
+        }
+
+        .featured-content > p {
+            color: #a2a2aa;
+
+            font-size: 15px;
+
+            line-height: 1.85;
+
+            margin-bottom: 28px;
+        }
+
+
+        /* =====================================================
+           FEATURED META
+        ===================================================== */
+
+        .featured-meta {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 9px;
+        }
+
+        .featured-meta span {
+            padding: 8px 13px;
+
+            border: 1px solid rgba(255,255,255,0.10);
+
+            border-radius: 50px;
+
+            color: #9999a1;
+
+            font-size: 9px;
+
+            font-weight: 800;
+
+            letter-spacing: 1px;
+
+            text-transform: uppercase;
+        }
+
+        body:not(.dark-mode) .featured-meta span {
+            color: #5d5d65;
+
+            border-color: rgba(0,0,0,0.10);
+        }
+
+
+        /* =====================================================
+           PORTFOLIO GRID
+        ===================================================== */
+
+        .portfolio-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
+
+            gap: 22px;
+        }
+
+
+        /* =====================================================
+           PORTFOLIO CARD
+        ===================================================== */
+
+        .portfolio-card {
+            position: relative;
+
+            overflow: hidden;
+
+            border-radius: 22px;
+
+            border: 1px solid rgba(255,255,255,0.08);
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(255,255,255,0.045),
+                    rgba(255,255,255,0.012)
+                );
+
+            transition:
+                transform 0.35s ease,
+                border-color 0.35s ease,
+                box-shadow 0.35s ease;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-8px);
+
+            border-color: rgba(212,175,55,0.42);
+
+            box-shadow:
+                0 25px 60px rgba(0,0,0,0.25);
+        }
+
+
+        /* =====================================================
+           CARD VISUAL
+        ===================================================== */
+
+        .portfolio-image {
+            position: relative;
+
+            height: 220px;
+
+            display: flex;
+
+            align-items: flex-end;
+
+            padding: 25px;
+
+            overflow: hidden;
+
+            background:
+                radial-gradient(
+                    circle at 80% 20%,
+                    rgba(212,175,55,0.14),
+                    transparent 35%
+                ),
+                linear-gradient(
+                    145deg,
+                    #171717,
+                    #080808
+                );
+        }
+
+        .portfolio-image::before {
+            content: "";
+
+            position: absolute;
+
+            width: 190px;
+            height: 190px;
+
+            top: -75px;
+            right: -50px;
+
+            border-radius: 50%;
+
+            border: 1px solid rgba(212,175,55,0.20);
+
+            transition:
+                transform 0.5s ease;
+        }
+
+        .portfolio-card:hover .portfolio-image::before {
+            transform: scale(1.25);
+        }
+
+        .portfolio-image::after {
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            height: 75%;
+
+            background:
+                linear-gradient(
+                    transparent,
+                    rgba(0,0,0,0.78)
+                );
+        }
+
+        .portfolio-image span {
+            position: relative;
+
+            z-index: 2;
+
+            color: rgba(255,255,255,0.70);
+
+            font-size: 10px;
+
+            font-weight: 800;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+        }
+
+
+        /* =====================================================
+           CARD CONTENT
+        ===================================================== */
+
+        .portfolio-info {
+            padding: 29px 30px 32px;
+        }
+
+        .portfolio-category {
+            color: #d4af37;
+
+            font-size: 9px;
+
+            font-weight: 800;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 13px;
+        }
+
+        .portfolio-info h3 {
+            color: #ffffff;
+
+            font-size: 25px;
+
+            line-height: 1.18;
+
+            letter-spacing: -0.6px;
+
+            margin-bottom: 14px;
+        }
+
+        .portfolio-info > p:last-child {
+            color: #9999a2;
+
+            font-size: 14px;
+
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           CARD FOOTER
+        ===================================================== */
+
+        .portfolio-card-footer {
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            margin-top: 24px;
+
+            padding-top: 18px;
+
+            border-top: 1px solid rgba(255,255,255,0.08);
+
+            color: #85858d;
+
+            font-size: 9px;
+
+            font-weight: 800;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+        }
+
+        body:not(.dark-mode) .portfolio-card-footer {
+            border-color: rgba(0,0,0,0.08);
+
+            color: #66666f;
+        }
+
+        .card-arrow {
+            color: #d4af37;
+
+            font-size: 16px;
+
+            transition:
+                transform 0.25s ease;
+        }
+
+        .portfolio-card:hover .card-arrow {
+            transform: translate(3px, -3px);
+        }
+
+
+        /* =====================================================
+           CARD DOT
+        ===================================================== */
+
+        .portfolio-card::after {
+            content: "";
+
+            position: absolute;
+
+            top: 18px;
+            right: 20px;
+
+            width: 7px;
+            height: 7px;
+
+            border-radius: 50%;
+
+            background: #d4af37;
+
+            opacity: 0.65;
+
+            box-shadow:
+                0 0 0 5px rgba(212,175,55,0.08);
+        }
+
+
+        /* =====================================================
+           FILMOGRAPHY
+        ===================================================== */
+
+        .filmography-section {
+            padding-top: 110px;
+            padding-bottom: 100px;
+        }
+
+        .filmography-heading {
+            display: grid;
+
+            grid-template-columns: 0.8fr 1.2fr;
+
+            gap: 70px;
+
+            margin-bottom: 50px;
+        }
+
+        .filmography-heading .section-label {
+            color: #d4af37;
+
+            font-size: 10px;
+
+            font-weight: 800;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+        }
+
+        .filmography-heading h2 {
+            max-width: 650px;
+
+            color: inherit;
+
+            font-size: clamp(35px, 4vw, 55px);
+
+            line-height: 1.05;
+
+            letter-spacing: -2px;
+        }
+
+
+        /* =====================================================
+           FILM LIST
+        ===================================================== */
+
+        .film-list {
+            border-top: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .film-item {
+            display: grid;
+
+            grid-template-columns: 75px 1fr auto;
+
+            align-items: center;
+
+            gap: 30px;
+
+            padding: 29px 0;
+
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+
+            transition:
+                padding-left 0.3s ease,
+                border-color 0.3s ease;
+        }
+
+        .film-item:hover {
+            padding-left: 12px;
+
+            border-color: rgba(212,175,55,0.25);
+        }
+
+        .film-year {
+            color: #d4af37;
+
+            font-size: 11px;
+
+            font-weight: 800;
+
+            letter-spacing: 1px;
+        }
+
+        .film-title {
+            color: #ffffff;
+
+            font-size: 21px;
+
+            font-weight: 600;
+
+            letter-spacing: -0.3px;
+        }
+
+        .film-credit {
+            color: #85858d;
+
+            font-size: 10px;
+
+            font-weight: 800;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+
+            text-align: right;
+        }
+
+
+        /* =====================================================
+           CREATIVE STATEMENT
+        ===================================================== */
+
+        .portfolio-statement {
+            padding: 80px 0 110px;
+        }
+
+        .statement-inner {
+            display: grid;
+
+            grid-template-columns: 0.85fr 1.15fr;
+
+            gap: 90px;
+
+            padding: 65px 0;
+
+            border-top: 1px solid rgba(255,255,255,0.08);
+
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .statement-label {
+            color: #d4af37;
+
+            font-size: 10px;
+
+            font-weight: 800;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 18px;
+        }
+
+        .statement-inner h2 {
+            max-width: 430px;
+
+            color: #ffffff;
+
+            font-size: clamp(35px, 4vw, 53px);
+
+            line-height: 1.05;
+
+            letter-spacing: -2px;
+        }
+
+        .statement-copy p {
+            color: #a1a1a9;
+
+            font-size: 16px;
+
+            line-height: 1.9;
+
+            margin-bottom: 22px;
+        }
+
+        .statement-copy p:last-child {
+            margin-bottom: 0;
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media (max-width: 850px) {
+
+            .portfolio-page {
+                padding-top: 80px;
+                padding-bottom: 70px;
+            }
+
+            .portfolio-page h1 {
+                font-size: 46px;
+                letter-spacing: -2.5px;
+            }
+
+            .portfolio-page .page-intro {
+                font-size: 15px;
+            }
+
+            .featured-project {
+                grid-template-columns: 1fr;
+
+                border-radius: 21px;
+            }
+
+            .featured-visual {
+                min-height: 310px;
+
+                padding: 30px;
+            }
+
+            .featured-content {
+                padding: 38px 28px 42px;
+            }
+
+            .featured-content h2 {
+                font-size: 38px;
+            }
+
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .portfolio-image {
+                height: 200px;
+            }
+
+            .filmography-heading {
+                grid-template-columns: 1fr;
+
+                gap: 20px;
+            }
+
+            .film-item {
+                grid-template-columns: 55px 1fr;
+
+                gap: 18px;
+            }
+
+            .film-credit {
+                grid-column: 2;
+
+                text-align: left;
+            }
+
+            .statement-inner {
+                grid-template-columns: 1fr;
+
+                gap: 35px;
+
+                padding: 45px 0;
+            }
+        }
+
+
+        @media (max-width: 650px) {
+
+            .theme-toggle {
+                width: 38px;
+
+                height: 38px;
+
+                font-size: 16px;
+            }
+        }
+
+
+        @media (max-width: 500px) {
+
+            .portfolio-filter {
+                gap: 7px;
+            }
+
+            .portfolio-filter button {
+                padding: 9px 12px;
+
+                font-size: 8px;
+            }
+
+            .featured-visual {
+                padding: 28px;
+            }
+
+            .featured-visual-text strong {
+                font-size: 47px;
+            }
+
+            .portfolio-info {
+                padding: 24px 23px 27px;
+            }
+
+            .portfolio-info h3 {
+                font-size: 22px;
+            }
+
+            .film-title {
+                font-size: 18px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+
+            <!-- LOGO -->
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+                MSK<span>.</span>
+            </a>
+
+
+            <!-- MOBILE MENU -->
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                type="button"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+
+            <!-- NAVIGATION LINKS -->
+
+            <ul
+                class="nav-links"
+                id="navLinks"
+            >
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="impact.html">
+                        Impact
+                    </a>
+                </li>
+
+                <li>
+                    <a href="experience.html">
+                        Experience
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="portfolio.html"
+                        class="active"
+                    >
+                        Portfolio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="books.html">
+                        Books &amp; Stories
+                    </a>
+                </li>
+
+                <li>
+                    <a href="education.html">
+                        Education
+                    </a>
+                </li>
+
+                <li>
+                    <a href="skills.html">
+                        Skills
+                    </a>
+                </li>
+
+                <li>
+                    <a href="awards.html">
+                        Awards
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- THEME BUTTON -->
+
+            <button
+                type="button"
+                class="theme-toggle"
+                id="themeToggle"
+                aria-label="Toggle dark mode"
+                title="Toggle light / dark mode"
+            >
+                <span id="themeIcon">☾</span>
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             PORTFOLIO INTRO
+        ================================================== -->
+
+        <section class="section portfolio-page">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    SELECTED WORK
+                </p>
+
+                <h1>
+                    Ideas turned into
+                    creative work.
+                </h1>
+
+                <p class="page-intro">
+                    A growing body of work across journalism,
+                    media production, filmmaking, youth
+                    development and creative communication.
+                </p>
+
+            </div>
+
+
+            <!-- =================================================
+                 FILTER
+            ================================================== -->
+
+            <div class="portfolio-filter">
+
+                <button
+                    class="active"
+                    type="button"
+                    data-filter="all"
+                >
+                    All Work
+                </button>
+
+                <button
+                    type="button"
+                    data-filter="journalism"
+                >
+                    Journalism
+                </button>
+
+                <button
+                    type="button"
+                    data-filter="film"
+                >
+                    Film
+                </button>
+
+                <button
+                    type="button"
+                    data-filter="media"
+                >
+                    Media
+                </button>
+
+                <button
+                    type="button"
+                    data-filter="youth"
+                >
+                    Youth
+                </button>
+
+            </div>
+
+
+            <!-- =================================================
+                 FEATURED PROJECT
+            ================================================== -->
+
+            <article class="featured-project">
+
+                <div class="featured-visual">
+
+                    <div class="featured-visual-text">
+
+                        <span>
+                            FEATURED CREATIVE WORK
+                        </span>
+
+                        <strong>
+                            BRIDE<br>
+                            PRICE
+                        </strong>
+
+                        <small>
+                            Film • Social Awareness
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="featured-content">
+
+                    <p class="project-label">
+                        FILM • SOCIAL AWARENESS
+                    </p>
+
+                    <h2>
+                        Bride Price
+                    </h2>
+
+                    <p>
+                        A film project developed through
+                        Tivannah Innovations Youth Organization,
+                        using storytelling to explore social
+                        issues, relationships and the realities
+                        surrounding gender-based violence.
+                    </p>
+
+                    <div class="featured-meta">
+
+                        <span>
+                            Writer
+                        </span>
+
+                        <span>
+                            Director
+                        </span>
+
+                        <span>
+                            Film
+                        </span>
+
+                        <span>
+                            2025
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 PORTFOLIO GRID
+            ================================================== -->
+
+            <div class="portfolio-grid">
+
+
+                <!-- JOURNALISM -->
+
+                <article
+                    class="portfolio-card"
+                    data-category="journalism"
+                >
+
+                    <div class="portfolio-image">
+
+                        <span>
+                            JOURNALISM
+                        </span>
+
+                    </div>
+
+                    <div class="portfolio-info">
+
+                        <p class="portfolio-category">
+                            MEDIA &amp; REPORTING
+                        </p>
+
+                        <h3>
+                            Journalism &amp; Field Reporting
+                        </h3>
+
+                        <p>
+                            Interviews, community stories,
+                            public-interest reporting, field
+                            coverage and digital storytelling.
+                        </p>
+
+                        <div class="portfolio-card-footer">
+
+                            <span>
+                                Journalism
+                            </span>
+
+                            <span class="card-arrow">
+                                ↗
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MEDIA -->
+
+                <article
+                    class="portfolio-card"
+                    data-category="media"
+                >
+
+                    <div class="portfolio-image">
+
+                        <span>
+                            MEDIA
+                        </span>
+
+                    </div>
+
+                    <div class="portfolio-info">
+
+                        <p class="portfolio-category">
+                            MEDIA PRODUCTION
+                        </p>
+
+                        <h3>
+                            South Media Trends-TV
+                        </h3>
+
+                        <p>
+                            Media coverage, interviews,
+                            livestreaming, field production
+                            and digital content development.
+                        </p>
+
+                        <div class="portfolio-card-footer">
+
+                            <span>
+                                Media
+                            </span>
+
+                            <span class="card-arrow">
+                                ↗
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- YOUTH -->
+
+                <article
+                    class="portfolio-card"
+                    data-category="youth"
+                >
+
+                    <div class="portfolio-image">
+
+                        <span>
+                            YOUTH
+                        </span>
+
+                    </div>
+
+                    <div class="portfolio-info">
+
+                        <p class="portfolio-category">
+                            YOUTH DEVELOPMENT
+                        </p>
+
+                        <h3>
+                            Tivannah Innovations
+                        </h3>
+
+                        <p>
+                            Youth-focused initiatives, creative
+                            projects, community engagement,
+                            film production and youth
+                            participation.
+                        </p>
+
+                        <div class="portfolio-card-footer">
+
+                            <span>
+                                Youth Development
+                            </span>
+
+                            <span class="card-arrow">
+                                ↗
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- FILM -->
+
+                <article
+                    class="portfolio-card"
+                    data-category="film"
+                >
+
+                    <div class="portfolio-image">
+
+                        <span>
+                            FILM
+                        </span>
+
+                    </div>
+
+                    <div class="portfolio-info">
+
+                        <p class="portfolio-category">
+                            FILM &amp; STORYTELLING
+                        </p>
+
+                        <h3>
+                            Social Storytelling
+                        </h3>
+
+                        <p>
+                            Screenwriting, directing, creative
+                            development and storytelling focused
+                            on meaningful social themes.
+                        </p>
+
+                        <div class="portfolio-card-footer">
+
+                            <span>
+                                Film
+                            </span>
+
+                            <span class="card-arrow">
+                                ↗
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- COMMUNITY -->
+
+                <article
+                    class="portfolio-card"
+                    data-category="youth"
+                >
+
+                    <div class="portfolio-image">
+
+                        <span>
+                            COMMUNITY
+                        </span>
+
+                    </div>
+
+                    <div class="portfolio-info">
+
+                        <p class="portfolio-category">
+                            COMMUNITY COMMUNICATION
+                        </p>
+
+                        <h3>
+                            Community Engagement
+                        </h3>
+
+                        <p>
+                            Communication and mobilisation work
+                            supporting youth initiatives,
+                            community organisations and
+                            development activities.
+                        </p>
+
+                        <div class="portfolio-card-footer">
+
+                            <span>
+                                Community
+                            </span>
+
+                            <span class="card-arrow">
+                                ↗
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- DIGITAL -->
+
+                <article
+                    class="portfolio-card"
+                    data-category="media"
+                >
+
+                    <div class="portfolio-image">
+
+                        <span>
+                            DIGITAL
+                        </span>
+
+                    </div>
+
+                    <div class="portfolio-info">
+
+                        <p class="portfolio-category">
+                            DIGITAL COMMUNICATION
+                        </p>
+
+                        <h3>
+                            Digital Content
+                        </h3>
+
+                        <p>
+                            Digital media, online communication,
+                            promotional content and visual
+                            storytelling for projects and
+                            organisations.
+                        </p>
+
+                        <div class="portfolio-card-footer">
+
+                            <span>
+                                Digital Media
+                            </span>
+
+                            <span class="card-arrow">
+                                ↗
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FILMOGRAPHY
+        ====================================================== -->
+
+        <section class="section filmography-section">
+
+            <div class="filmography-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        FILMOGRAPHY
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h2>
+                        Stories written,
+                        directed and brought
+                        to life.
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="film-list">
+
+
+                <div class="film-item">
+
+                    <span class="film-year">
+                        2022
+                    </span>
+
+                    <span class="film-title">
+                        Agony of Marriage
+                    </span>
+
+                    <span class="film-credit">
+                        Writer &amp; Director
+                    </span>
+
+                </div>
+
+
+                <div class="film-item">
+
+                    <span class="film-year">
+                        2023
+                    </span>
+
+                    <span class="film-title">
+                        Film &amp; Creative Production
+                    </span>
+
+                    <span class="film-credit">
+                        Writer &amp; Director
+                    </span>
+
+                </div>
+
+
+                <div class="film-item">
+
+                    <span class="film-year">
+                        2024
+                    </span>
+
+                    <span class="film-title">
+                        Power of Prayer
+                    </span>
+
+                    <span class="film-credit">
+                        Writer &amp; Director
+                    </span>
+
+                </div>
+
+
+                <div class="film-item">
+
+                    <span class="film-year">
+                        2024
+                    </span>
+
+                    <span class="film-title">
+                        Mwelwa
+                    </span>
+
+                    <span class="film-credit">
+                        Writer &amp; Director
+                    </span>
+
+                </div>
+
+
+                <div class="film-item">
+
+                    <span class="film-year">
+                        2024
+                    </span>
+
+                    <span class="film-title">
+                        The Voiceless
+                    </span>
+
+                    <span class="film-credit">
+                        Writer &amp; Director
+                    </span>
+
+                </div>
+
+
+                <div class="film-item">
+
+                    <span class="film-year">
+                        2025
+                    </span>
+
+                    <span class="film-title">
+                        Bride Price
+                    </span>
+
+                    <span class="film-credit">
+                        Writer &amp; Director
+                    </span>
+
+                </div>
+
+
+                <div class="film-item">
+
+                    <span class="film-year">
+                        CURRENT
+                    </span>
+
+                    <span class="film-title">
+                        Where Is the Body
+                    </span>
+
+                    <span class="film-credit">
+                        Writer
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CREATIVE STATEMENT
+        ====================================================== -->
+
+        <section class="section portfolio-statement">
+
+            <div class="statement-inner">
+
+                <div>
+
+                    <p class="statement-label">
+                        CREATIVE PHILOSOPHY
+                    </p>
+
+                    <h2>
+                        Stories should
+                        mean something.
+                    </h2>
+
+                </div>
+
+
+                <div class="statement-copy">
+
+                    <p>
+                        My creative work is driven by the belief
+                        that storytelling can do more than
+                        entertain. It can inform, challenge
+                        perspectives, encourage conversation and
+                        give people a platform to be heard.
+                    </p>
+
+                    <p>
+                        Through journalism, film and digital
+                        media, I continue to explore ways of
+                        turning ideas and real experiences into
+                        meaningful stories.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div>
+
+            <strong>
+                Mubita Siasabuzingo Kabika
+            </strong>
+
+            <p>
+                Lecturer • Journalist • Creative
+            </p>
+
+        </div>
+
+
+        <p>
+            ©
+            <span id="year"></span>
+            Mubita Siasabuzingo Kabika
+        </p>
+
+    </footer>
+
+
+    <!-- =====================================================
+         MAIN JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/script.js"></script>
+
+
+    <!-- =====================================================
+         PORTFOLIO FILTER
+    ====================================================== -->
+
+    <script>
+
+        const filterButtons =
+            document.querySelectorAll(
+                ".portfolio-filter button"
+            );
+
+        const portfolioCards =
+            document.querySelectorAll(
+                ".portfolio-card"
+            );
+
+
+        filterButtons.forEach(button => {
+
+            button.addEventListener(
+                "click",
+                () => {
+
+                    filterButtons.forEach(btn => {
+
+                        btn.classList.remove(
+                            "active"
+                        );
+
+                    });
+
+
+                    button.classList.add(
+                        "active"
+                    );
+
+
+                    const filter =
+                        button.dataset.filter;
+
+
+                    portfolioCards.forEach(card => {
+
+                        const category =
+                            card.dataset.category;
+
+
+                        if (
+                            filter === "all" ||
+                            category === filter
+                        ) {
+
+                            card.style.display =
+                                "block";
+
+                        } else {
+
+                            card.style.display =
+                                "none";
+
+                        }
+
+                    });
+
+                }
+            );
+
+        });
+
+
+        /* =====================================================
+           FOOTER YEAR
+        ===================================================== */
+
+        const yearElement =
+            document.getElementById("year");
+
+        if (yearElement) {
+
+            yearElement.textContent =
+                new Date().getFullYear();
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

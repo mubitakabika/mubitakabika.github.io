@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+```
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<meta
+    name="description"
+    content="Books and stories written by Mubita Siasabuzingo Kabika."
+>
+
+<meta
+    name="author"
+    content="Mubita Siasabuzingo Kabika"
+>
+
+<title>
+    Books & Stories | Mubita Siasabuzingo Kabika
+</title>
+
+
+<link
+    rel="stylesheet"
+    href="css/style.css"
+>
+
+
+<style>
+
+    /* =====================================================
+       BOOKS PAGE
+    ===================================================== */
+
+    .books-page {
+        padding-top: 110px;
+        padding-bottom: 100px;
+    }
+
+
+    /* =====================================================
+       INTRODUCTION
+    ===================================================== */
+
+    .books-page .section-heading {
+        max-width: 850px;
+        margin-bottom: 70px;
+    }
+
+
+    .books-page .section-label {
+        color: #d4af37;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+    }
+
+
+    .books-page h1 {
+        max-width: 850px;
+        font-size: clamp(48px, 7vw, 82px);
+        line-height: 0.98;
+        letter-spacing: -4px;
+        margin-bottom: 28px;
+    }
+
+
+    .books-page .page-intro {
+        max-width: 700px;
+        color: #73737d;
+        font-size: 17px;
+        line-height: 1.85;
+    }
+
+
+    /* =====================================================
+       LIBRARY HEADER
+    ===================================================== */
+
+    .library-header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 30px;
+
+        margin-bottom: 30px;
+        padding-bottom: 18px;
+
+        border-bottom:
+            1px solid rgba(0,0,0,0.08);
+    }
+
+
+    .library-header h2 {
+        color: #18181c;
+
+        font-size:
+            clamp(28px, 4vw, 45px);
+
+        line-height: 1.05;
+        letter-spacing: -1.5px;
+
+        margin: 0;
+    }
+
+
+    .library-header p {
+        max-width: 360px;
+
+        color: #777780;
+
+        font-size: 13px;
+        line-height: 1.7;
+
+        margin: 0;
+    }
+
+
+    /* =====================================================
+       BOOK GRID
+    ===================================================== */
+
+    .books-grid {
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 22px;
+
+        margin-bottom: 90px;
+    }
+
+
+    /* =====================================================
+       BOOK CARD
+    ===================================================== */
+
+    .book-card {
+        position: relative;
+        overflow: hidden;
+
+        display: grid;
+
+        grid-template-columns:
+            190px 1fr;
+
+        min-height: 310px;
+
+        border:
+            1px solid rgba(0,0,0,0.08);
+
+        border-radius: 24px;
+
+        background:
+            linear-gradient(
+                145deg,
+                #ffffff,
+                #f7f7f7
+            );
+
+        transition:
+            transform .35s ease,
+            border-color .35s ease,
+            box-shadow .35s ease;
+    }
+
+
+    .book-card:hover {
+        transform:
+            translateY(-6px);
+
+        border-color:
+            rgba(212,175,55,0.38);
+
+        box-shadow:
+            0 25px 70px
+            rgba(0,0,0,0.10);
+    }
+
+
+    /* =====================================================
+       BOOK COVER
+    ===================================================== */
+
+    .book-cover {
+        position: relative;
+
+        min-height: 310px;
+
+        padding: 18px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        background:
+            linear-gradient(
+                145deg,
+                rgba(212,175,55,0.12),
+                rgba(0,0,0,0.025)
+            );
+
+        border-right:
+            1px solid rgba(0,0,0,0.07);
+    }
+
+
+    .book-cover-image {
+        display: block;
+
+        width: 145px;
+        height: 210px;
+
+        object-fit: cover;
+
+        border-radius: 5px;
+
+        border:
+            1px solid rgba(212,175,55,0.35);
+
+        box-shadow:
+            10px 15px 30px
+            rgba(0,0,0,0.25);
+
+        transition:
+            transform .35s ease,
+            box-shadow .35s ease;
+    }
+
+
+    .book-cover-image:hover {
+        transform:
+            scale(1.035);
+
+        box-shadow:
+            12px 20px 38px
+            rgba(0,0,0,0.32);
+    }
+
+
+    /* =====================================================
+       BOOK INFORMATION
+    ===================================================== */
+
+    .book-info {
+        padding: 32px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+    }
+
+
+    .book-category {
+        color: #a27b16;
+
+        font-size: 9px;
+        font-weight: 800;
+
+        letter-spacing: 2.5px;
+
+        text-transform: uppercase;
+
+        margin-bottom: 12px;
+    }
+
+
+    .book-info h2 {
+        color: #18181c;
+
+        font-size: 26px;
+
+        line-height: 1.2;
+
+        letter-spacing: -0.7px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .book-description {
+        color: #73737d;
+
+        font-size: 13px;
+
+        line-height: 1.8;
+
+        margin-bottom: 20px;
+    }
+
+
+    /* =====================================================
+       BOOK META
+    ===================================================== */
+
+    .book-meta {
+        display: flex;
+
+        flex-wrap: wrap;
+
+        gap: 8px;
+
+        margin-bottom: 22px;
+    }
+
+
+    .book-meta span {
+        padding:
+            7px 10px;
+
+        border-radius: 50px;
+
+        border:
+            1px solid rgba(0,0,0,0.08);
+
+        background:
+            rgba(0,0,0,0.025);
+
+        color: #777780;
+
+        font-size: 8px;
+
+        font-weight: 700;
+
+        letter-spacing: 1.2px;
+
+        text-transform: uppercase;
+    }
+
+
+    /* =====================================================
+       BOOK BUTTONS
+    ===================================================== */
+
+    .book-actions {
+        display: flex;
+
+        flex-wrap: wrap;
+
+        gap: 10px;
+    }
+
+
+    .book-actions .btn {
+        min-height: 42px;
+
+        padding:
+            0 17px;
+
+        border-radius: 10px;
+
+        font-size: 10px;
+
+        text-decoration: none;
+
+        display: inline-flex;
+
+        align-items: center;
+
+        justify-content: center;
+    }
+
+
+    /* =====================================================
+       WRITING STATEMENT
+    ===================================================== */
+
+    .writing-statement {
+        position: relative;
+
+        overflow: hidden;
+
+        padding: 55px;
+
+        border-radius: 27px;
+
+        border:
+            1px solid rgba(212,175,55,0.22);
+
+        background:
+            linear-gradient(
+                135deg,
+                rgba(212,175,55,0.09),
+                rgba(0,0,0,0.018)
+            );
+    }
+
+
+    .writing-statement::after {
+        content: "WORDS";
+
+        position: absolute;
+
+        right: -20px;
+        bottom: -50px;
+
+        color:
+            rgba(0,0,0,0.025);
+
+        font-size: 115px;
+
+        font-weight: 900;
+
+        letter-spacing: -8px;
+
+        pointer-events: none;
+    }
+
+
+    .writing-statement .section-label {
+        position: relative;
+
+        z-index: 2;
+
+        color: #a27b16;
+
+        font-size: 9px;
+
+        font-weight: 800;
+
+        letter-spacing: 3px;
+
+        text-transform: uppercase;
+
+        margin-bottom: 15px;
+    }
+
+
+    .writing-statement h2 {
+        position: relative;
+
+        z-index: 2;
+
+        max-width: 700px;
+
+        color: #18181c;
+
+        font-size:
+            clamp(32px, 5vw, 55px);
+
+        line-height: 1.05;
+
+        letter-spacing: -2px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .writing-statement p {
+        position: relative;
+
+        z-index: 2;
+
+        max-width: 760px;
+
+        color: #73737d;
+
+        font-size: 15px;
+
+        line-height: 1.9;
+    }
+
+
+    /* =====================================================
+       DARK MODE
+    ===================================================== */
+
+    body.dark-mode
+    .books-page .page-intro,
+
+    body.dark-mode
+    .library-header p,
+
+    body.dark-mode
+    .book-description {
+
+        color: #9c9ca4;
+    }
+
+
+    body.dark-mode
+    .library-header {
+
+        border-bottom-color:
+            rgba(255,255,255,0.08);
+    }
+
+
+    body.dark-mode
+    .library-header h2 {
+
+        color: #ffffff;
+    }
+
+
+    body.dark-mode
+    .book-card {
+
+        border-color:
+            rgba(255,255,255,0.08);
+
+        background:
+            linear-gradient(
+                145deg,
+                rgba(255,255,255,0.045),
+                rgba(255,255,255,0.012)
+            );
+
+        box-shadow: none;
+    }
+
+
+    body.dark-mode
+    .book-card:hover {
+
+        border-color:
+            rgba(212,175,55,0.38);
+
+        box-shadow:
+            0 25px 70px
+            rgba(0,0,0,0.25);
+    }
+
+
+    body.dark-mode
+    .book-cover {
+
+        border-right-color:
+            rgba(255,255,255,0.07);
+    }
+
+
+    body.dark-mode
+    .book-info h2 {
+
+        color: #ffffff;
+    }
+
+
+    body.dark-mode
+    .book-meta span {
+
+        border-color:
+            rgba(255,255,255,0.08);
+
+        background:
+            rgba(255,255,255,0.025);
+
+        color: #8f8f97;
+    }
+
+
+    body.dark-mode
+    .writing-statement {
+
+        background:
+            linear-gradient(
+                135deg,
+                rgba(212,175,55,0.09),
+                rgba(255,255,255,0.025)
+            );
+    }
+
+
+    body.dark-mode
+    .writing-statement::after {
+
+        color:
+            rgba(255,255,255,0.025);
+    }
+
+
+    body.dark-mode
+    .writing-statement h2 {
+
+        color: #ffffff;
+    }
+
+
+    body.dark-mode
+    .writing-statement p {
+
+        color: #a0a0a8;
+    }
+
+
+    /* =====================================================
+       TABLET
+    ===================================================== */
+
+    @media (max-width: 1000px) {
+
+        .books-grid {
+
+            grid-template-columns:
+                1fr;
+        }
+
+    }
+
+
+    /* =====================================================
+       MOBILE
+    ===================================================== */
+
+    @media (max-width: 700px) {
+
+        .books-page {
+
+            padding-top: 75px;
+
+            padding-bottom: 70px;
+        }
+
+
+        .books-page h1 {
+
+            font-size: 47px;
+
+            letter-spacing: -2.5px;
+        }
+
+
+        .books-page .page-intro {
+
+            font-size: 15px;
+        }
+
+
+        .library-header {
+
+            display: block;
+        }
+
+
+        .library-header p {
+
+            margin-top: 12px;
+        }
+
+
+        .book-card {
+
+            grid-template-columns:
+                1fr;
+        }
+
+
+        .book-cover {
+
+            min-height: 300px;
+
+            border-right: none;
+
+            border-bottom:
+                1px solid rgba(0,0,0,0.07);
+        }
+
+
+        body.dark-mode
+        .book-cover {
+
+            border-bottom-color:
+                rgba(255,255,255,0.07);
+        }
+
+
+        .book-cover-image {
+
+            width: 150px;
+
+            height: 215px;
+        }
+
+
+        .book-info {
+
+            padding:
+                27px 24px;
+        }
+
+
+        .book-info h2 {
+
+            font-size: 23px;
+        }
+
+
+        .writing-statement {
+
+            padding:
+                35px 25px;
+        }
+
+
+        .writing-statement h2 {
+
+            font-size: 36px;
+
+            letter-spacing: -1.5px;
+        }
+
+    }
+
+
+    /* =====================================================
+       SMALL PHONES
+    ===================================================== */
+
+    @media (max-width: 480px) {
+
+        .books-page h1 {
+
+            font-size: 40px;
+        }
+
+
+        .book-cover {
+
+            min-height: 275px;
+        }
+
+
+        .book-cover-image {
+
+            width: 135px;
+
+            height: 195px;
+        }
+
+
+        .book-info {
+
+            padding:
+                25px 20px;
+        }
+
+
+        .book-info h2 {
+
+            font-size: 22px;
+        }
+
+
+        .book-description {
+
+            font-size: 13px;
+        }
+
+
+        .writing-statement {
+
+            padding:
+                30px 22px;
+        }
+
+    }
+
+</style>
+```
+
+</head>
+
+<body>
+
+<!-- =====================================================
+     HEADER / NAVIGATION
+====================================================== -->
+
+<header class="header">
+
+```
+<nav class="navbar">
+
+
+    <!-- LOGO -->
+
+    <a
+        href="index.html"
+        class="logo"
+    >
+        MSK<span>.</span>
+    </a>
+
+
+    <!-- NAVIGATION LINKS -->
+
+    <ul
+        class="nav-links"
+        id="navLinks"
+    >
+
+        <li>
+            <a href="index.html">
+                Home
+            </a>
+        </li>
+
+
+        <li>
+            <a href="about.html">
+                About
+            </a>
+        </li>
+
+
+        <li>
+            <a href="impact.html">
+                Impact
+            </a>
+        </li>
+
+
+        <li>
+            <a href="experience.html">
+                Experience
+            </a>
+        </li>
+
+
+        <li>
+            <a href="portfolio.html">
+                Portfolio
+            </a>
+        </li>
+
+
+        <li>
+            <a
+                href="books.html"
+                class="active"
+            >
+                Books &amp; Stories
+            </a>
+        </li>
+
+
+        <li>
+            <a href="education.html">
+                Education
+            </a>
+        </li>
+
+
+        <li>
+            <a href="skills.html">
+                Skills
+            </a>
+        </li>
+
+
+        <li>
+            <a href="awards.html">
+                Awards
+            </a>
+        </li>
+
+
+        <li>
+            <a href="contact.html">
+                Contact
+            </a>
+        </li>
+
+    </ul>
+
+
+    <!-- DARK / LIGHT MODE -->
+
+    <button
+        id="themeToggle"
+        class="theme-toggle"
+        type="button"
+        aria-label="Switch theme"
+        title="Switch theme"
+    >
+
+        <span
+            id="themeIcon"
+            aria-hidden="true"
+        >
+            ☾
+        </span>
+
+    </button>
+
+
+    <!-- MOBILE MENU -->
+
+    <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+    >
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+</nav>
+```
+
+</header>
+
+<!-- =====================================================
+     MAIN
+====================================================== -->
+
+<main>
+
+<section class="section books-page">
+
+```
+<!-- =================================================
+     INTRODUCTION
+================================================== -->
+
+<div class="section-heading">
+
+    <p class="section-label">
+        BOOKS &amp; STORIES
+    </p>
+
+
+    <h1>
+        My Writing
+        <br>
+        Library.
+    </h1>
+
+
+    <p class="page-intro">
+        A growing collection of books, stories,
+        creative writing and other written works
+        by Mubita Siasabuzingo Kabika.
+    </p>
+
+</div>
+
+
+
+<!-- =================================================
+     LIBRARY HEADER
+================================================== -->
+
+<div class="library-header">
+
+    <div>
+
+        <p class="section-label">
+            WRITTEN WORKS
+        </p>
+
+
+        <h2>
+            Stories worth reading.
+        </h2>
+
+    </div>
+
+
+    <p>
+        Explore the books and stories I have written,
+        published and continue to develop as part of
+        my journey as a writer and creative.
+    </p>
+
+</div>
+
+
+
+<!-- =================================================
+     BOOK GRID
+================================================== -->
+
+<div class="books-grid">
+
+
+    <!-- =================================================
+         BOOK 01 — AFTER GOODBYE
+    ================================================== -->
+
+    <article class="book-card">
+
+
+        <div class="book-cover">
+
+            <a
+                href="books/book-01.pdf"
+                target="_blank"
+                rel="noopener"
+                aria-label="Open After Goodbye"
+            >
+
+                <img
+                    src="images/books/book-01.jpg"
+                    alt="After Goodbye book cover"
+                    class="book-cover-image"
+                >
+
+            </a>
+
+        </div>
+
+
+        <div class="book-info">
+
+
+            <p class="book-category">
+                LIFE • REFLECTION
+            </p>
+
+
+            <h2>
+                After Goodbye
+            </h2>
+
+
+            <p class="book-description">
+                A written reflection on life,
+                experiences, change, relationships
+                and the moments that shape us.
+                Through my writing, I explore what
+                happens after difficult goodbyes and
+                the lessons we carry forward.
+            </p>
+
+
+            <div class="book-meta">
+
+                <span>
+                    Book
+                </span>
+
+                <span>
+                    Published 2026
+                </span>
+
+                <span>
+                    Author: Mubita Siasabuzingo Kabika
+                </span>
+
+            </div>
+
+
+            <div class="book-actions">
+
+                <a
+                    href="books/book-01.pdf"
+                    class="btn btn-primary"
+                    download="After-Goodbye.pdf"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    Download Book
+                </a>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- =================================================
+         BOOK 02 — THE SILENCE
+    ================================================== -->
+
+    <article class="book-card">
+
+
+        <div class="book-cover">
+
+            <a
+                href="books/book-02.pdf"
+                target="_blank"
+                rel="noopener"
+                aria-label="Open The Silence"
+            >
+
+                <img
+                    src="images/books/book-02.png"
+                    alt="The Silence book cover"
+                    class="book-cover-image"
+                >
+
+            </a>
+
+        </div>
+
+
+        <div class="book-info">
+
+
+            <p class="book-category">
+                STORY BOOK
+            </p>
+
+
+            <h2>
+                The Silence
+            </h2>
+
+
+            <p class="book-description">
+                A story that explores people,
+                experiences, emotions and the things
+                that can remain unspoken. Through
+                storytelling, I explore the meaning
+                behind silence and the experiences
+                it can carry.
+            </p>
+
+
+            <div class="book-meta">
+
+                <span>
+                    Story Book
+                </span>
+
+                <span>
+                    Published 2026
+                </span>
+
+                <span>
+                    Author: Mubita Siasabuzingo Kabika
+                </span>
+
+            </div>
+
+
+            <div class="book-actions">
+
+                <a
+                    href="books/book-02.pdf"
+                    class="btn btn-primary"
+                    download="The-Silence.pdf"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    Download Story
+                </a>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+</div>
+
+
+
+<!-- =================================================
+     WRITING STATEMENT
+================================================== -->
+
+<div class="writing-statement">
+
+
+    <p class="section-label">
+        THE WRITER
+    </p>
+
+
+    <h2>
+        Writing is a way of
+        turning ideas into impact.
+    </h2>
+
+
+    <p>
+        I use books, stories, journalism and creative
+        writing to explore people, communities,
+        experiences and ideas. Through my writing,
+        I tell stories, document experiences and
+        communicate ideas that I believe are worth
+        sharing. This library will continue to grow
+        as I write and publish new works.
+    </p>
+
+
+</div>
+```
+
+</section>
+
+</main>
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
+
+<footer class="footer">
+
+```
+<div>
+
+    <strong>
+        Mubita Siasabuzingo Kabika
+    </strong>
+
+
+    <p>
+        Lecturer • Journalist • Youth Advocate • Creative
+    </p>
+
+</div>
+
+
+<p>
+
+    ©
+    <span id="year"></span>
+    Mubita Siasabuzingo Kabika
+
+</p>
+```
+
+</footer>
+
+<!-- =====================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

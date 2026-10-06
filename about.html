@@ -1,0 +1,2375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About | Mubita Siasabuzingo Kabika</title>
+
+<meta
+    name="description"
+    content="About Mubita Siasabuzingo Kabika — educator, journalist, media professional, youth advocate, community development supporter and filmmaker."
+>
+
+<link rel="stylesheet" href="css/style.css">
+
+
+<style>
+
+/* =====================================================
+   ABOUT PAGE
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255,255,255,0.96);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.navbar {
+    width: 92%;
+    max-width: 1150px;
+    min-height: 72px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    color: #111111;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-right: auto;
+}
+
+.logo span {
+    color: #d4af37;
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #222222;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #d4af37;
+}
+
+
+/* =====================================================
+   THEME BUTTON
+===================================================== */
+
+.theme-toggle {
+    width: 38px;
+    height: 38px;
+    margin-left: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid rgba(0,0,0,0.12);
+    border-radius: 50%;
+    color: #222222;
+    cursor: pointer;
+    font-size: 18px;
+    flex-shrink: 0;
+    transition: 0.3s;
+}
+
+.theme-toggle:hover {
+    border-color: #d4af37;
+    color: #d4af37;
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   MOBILE MENU
+===================================================== */
+
+.menu-toggle {
+    display: none;
+    width: 42px;
+    height: 42px;
+    margin-left: 10px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #222222;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+    width: 92%;
+    max-width: 1150px;
+    margin: auto;
+    padding: 100px 0 80px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.eyebrow {
+    color: #d4af37;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 75px);
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #d4af37;
+}
+
+.hero p {
+    color: #666666;
+    font-size: 17px;
+    max-width: 720px;
+}
+
+
+/* =====================================================
+   HERO PHOTO
+===================================================== */
+
+.hero-photo {
+    min-height: 390px;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.08);
+}
+
+.hero-photo img {
+    width: 100%;
+    height: 100%;
+    min-height: 390px;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* =====================================================
+   PHOTO GALLERY
+===================================================== */
+
+.photo-section {
+    width: 92%;
+    max-width: 1150px;
+    margin: auto;
+    padding: 20px 0 100px;
+}
+
+.photo-heading {
+    max-width: 720px;
+    margin-bottom: 40px;
+}
+
+.photo-heading .section-label {
+    margin-bottom: 12px;
+}
+
+.photo-heading h2 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.photo-heading p {
+    color: #777777;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.photo-item {
+    position: relative;
+    height: 270px;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #eeeeee;
+    border: 1px solid rgba(0,0,0,0.08);
+    cursor: pointer;
+}
+
+.photo-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.photo-item:hover img {
+    transform: scale(1.06);
+}
+
+.photo-item:nth-child(1),
+.photo-item:nth-child(4) {
+    height: 330px;
+}
+
+.photo-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px 18px 16px;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.72),
+        rgba(0,0,0,0)
+    );
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+
+/* =====================================================
+   LIGHTBOX
+===================================================== */
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    background: rgba(0,0,0,0.94);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 80px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease,
+                visibility 0.3s ease;
+}
+
+.lightbox.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.lightbox-content {
+    position: relative;
+    width: min(1000px, 90vw);
+    height: min(80vh, 750px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 20px 80px rgba(0,0,0,0.5);
+    user-select: none;
+}
+
+.lightbox-close {
+    position: fixed;
+    top: 25px;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+    color: #ffffff;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 10002;
+    transition: 0.3s;
+}
+
+.lightbox-close:hover {
+    background: #d4af37;
+    color: #000000;
+    border-color: #d4af37;
+}
+
+.lightbox-prev,
+.lightbox-next {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.08);
+    color: #ffffff;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 10002;
+    transition: 0.3s;
+}
+
+.lightbox-prev {
+    left: 25px;
+}
+
+.lightbox-next {
+    right: 25px;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    background: #d4af37;
+    color: #000000;
+    border-color: #d4af37;
+}
+
+.lightbox-info {
+    position: fixed;
+    left: 50%;
+    bottom: 25px;
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-align: center;
+    z-index: 10002;
+    background: rgba(0,0,0,0.45);
+    padding: 7px 15px;
+    border-radius: 20px;
+}
+
+
+/* =====================================================
+   INTRO
+===================================================== */
+
+.intro {
+    width: 92%;
+    max-width: 1150px;
+    margin: auto;
+    padding: 30px 0 90px;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+}
+
+.section-label {
+    color: #d4af37;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.intro h2 {
+    font-size: 38px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   PROFESSIONAL AREAS
+===================================================== */
+
+.areas {
+    width: 92%;
+    max-width: 1150px;
+    margin: auto;
+    padding: 40px 0 110px;
+}
+
+.areas-heading {
+    max-width: 720px;
+    margin-bottom: 45px;
+}
+
+.areas-heading h2 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.areas-heading p {
+    color: #777777;
+}
+
+
+/* =====================================================
+   PROFILE CARDS
+===================================================== */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.profile-card {
+    position: relative;
+    min-height: 205px;
+    padding: 32px;
+    border-radius: 20px;
+    background: #f7f7f7;
+    border: 1px solid rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+    user-select: none;
+}
+
+.profile-card:hover {
+    transform: translateY(-7px);
+    background: #ffffff;
+    border-color: rgba(212,175,55,0.65);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.profile-card:active {
+    transform: scale(0.98);
+}
+
+.card-number {
+    color: #d4af37;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+}
+
+.profile-card h3 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.profile-card p {
+    color: #777777;
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+.view-profile {
+    color: #222222;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   PROFILE OVERLAY
+===================================================== */
+
+.profile-panel {
+    position: fixed;
+    inset: 0;
+    z-index: 5000;
+    background: rgba(0,0,0,0.75);
+    backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+
+.profile-panel.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* =====================================================
+   PANEL CONTENT
+===================================================== */
+
+.panel-content {
+    position: relative;
+    width: min(900px, 100%);
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 50px;
+    border-radius: 24px;
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.1);
+    color: #222222;
+    transform: translateY(30px);
+    transition: 0.35s ease;
+}
+
+.profile-panel.active .panel-content {
+    transform: translateY(0);
+}
+
+
+/* =====================================================
+   CLOSE BUTTON
+===================================================== */
+
+.close-panel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: #f1f1f1;
+    color: #222222;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close-panel:hover {
+    background: #d4af37;
+    color: #000000;
+}
+
+
+/* =====================================================
+   PANEL TEXT
+===================================================== */
+
+.panel-number {
+    color: #d4af37;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.panel-content h2 {
+    font-size: 42px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.panel-content h3 {
+    color: #b08c20;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+.panel-content p {
+    color: #555555;
+    margin-bottom: 16px;
+}
+
+.panel-content ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.panel-content li {
+    position: relative;
+    color: #555555;
+    padding: 10px 0 10px 22px;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+}
+
+.panel-content li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #d4af37;
+}
+
+
+/* =====================================================
+   FILMOGRAPHY
+===================================================== */
+
+.filmography {
+    margin-top: 15px;
+}
+
+.film {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 17px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.film strong {
+    color: #222222;
+}
+
+.film span {
+    color: #b08c20;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    border-top: 1px solid rgba(0,0,0,0.08);
+    padding: 45px 0;
+}
+
+.footer-container {
+    width: 92%;
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+footer p {
+    color: #777777;
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+body.dark-mode {
+    background: #09090b;
+    color: #ffffff;
+}
+
+body.dark-mode .header {
+    background: rgba(9,9,11,0.96);
+    border-bottom-color: rgba(255,255,255,0.08);
+}
+
+body.dark-mode .logo {
+    color: #ffffff;
+}
+
+body.dark-mode .nav-links a {
+    color: #ffffff;
+}
+
+body.dark-mode .nav-links a:hover,
+body.dark-mode .nav-links a.active {
+    color: #d4af37;
+}
+
+body.dark-mode .theme-toggle {
+    color: #ffffff;
+    border-color: rgba(255,255,255,0.15);
+}
+
+body.dark-mode .menu-toggle span {
+    background: #ffffff;
+}
+
+body.dark-mode .hero p,
+body.dark-mode .intro p {
+    color: #b7b7bd;
+}
+
+body.dark-mode .hero-photo {
+    border-color: rgba(255,255,255,0.08);
+}
+
+body.dark-mode .photo-heading p {
+    color: #9999a0;
+}
+
+body.dark-mode .photo-item {
+    background: #18181c;
+    border-color: rgba(255,255,255,0.08);
+}
+
+body.dark-mode .areas-heading p {
+    color: #9999a0;
+}
+
+body.dark-mode .profile-card {
+    background: #131316;
+    border-color: rgba(255,255,255,0.08);
+}
+
+body.dark-mode .profile-card:hover {
+    background: #18181c;
+    border-color: rgba(212,175,55,0.65);
+    box-shadow: none;
+}
+
+body.dark-mode .profile-card p {
+    color: #9999a0;
+}
+
+body.dark-mode .view-profile {
+    color: #ffffff;
+}
+
+body.dark-mode .panel-content {
+    background: #111114;
+    border-color: rgba(255,255,255,0.1);
+    color: #ffffff;
+}
+
+body.dark-mode .close-panel {
+    background: #1b1b1f;
+    border-color: rgba(255,255,255,0.1);
+    color: #ffffff;
+}
+
+body.dark-mode .panel-content p,
+body.dark-mode .panel-content li {
+    color: #bcbcc2;
+}
+
+body.dark-mode .panel-content li {
+    border-bottom-color: rgba(255,255,255,0.06);
+}
+
+body.dark-mode .film {
+    border-bottom-color: rgba(255,255,255,0.07);
+}
+
+body.dark-mode .film strong {
+    color: #ffffff;
+}
+
+body.dark-mode footer {
+    border-top-color: rgba(255,255,255,0.08);
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        min-height: 72px;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: 20px;
+        background: #ffffff;
+        border-bottom: 1px solid rgba(0,0,0,0.08);
+        z-index: 9999;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 12px 5px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .theme-toggle {
+        margin-left: 10px;
+        margin-right: 0;
+    }
+
+    body.dark-mode .nav-links {
+        background: #101012;
+        border-bottom-color: rgba(255,255,255,0.08);
+    }
+
+    body.dark-mode .nav-links a {
+        color: #ffffff;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding-top: 65px;
+        gap: 40px;
+    }
+
+    .hero-photo {
+        min-height: 280px;
+    }
+
+    .hero-photo img {
+        min-height: 280px;
+    }
+
+    .photo-section {
+        padding-bottom: 70px;
+    }
+
+    .photo-heading h2 {
+        font-size: 34px;
+    }
+
+    .photo-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .photo-item,
+    .photo-item:nth-child(1),
+    .photo-item:nth-child(4) {
+        height: 230px;
+    }
+
+    .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .panel-content {
+        padding: 38px 23px;
+    }
+
+    .panel-content h2 {
+        font-size: 32px;
+        padding-right: 35px;
+    }
+
+    .film {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .film span {
+        white-space: normal;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    /* LIGHTBOX MOBILE */
+
+    .lightbox {
+        padding: 20px;
+    }
+
+    .lightbox-content {
+        width: 100%;
+        height: 75vh;
+    }
+
+    .lightbox-image {
+        max-width: 100%;
+        max-height: 75vh;
+    }
+
+    .lightbox-close {
+        top: 15px;
+        right: 15px;
+        width: 44px;
+        height: 44px;
+    }
+
+    .lightbox-prev,
+    .lightbox-next {
+        width: 44px;
+        height: 44px;
+        font-size: 22px;
+    }
+
+    .lightbox-prev {
+        left: 12px;
+    }
+
+    .lightbox-next {
+        right: 12px;
+    }
+
+    .lightbox-info {
+        bottom: 15px;
+        font-size: 11px;
+    }
+}
+
+
+/* =====================================================
+   EXTRA SMALL PHONES
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .areas-heading h2 {
+        font-size: 34px;
+    }
+
+    .profile-card {
+        padding: 25px;
+    }
+
+    .photo-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-item,
+    .photo-item:nth-child(1),
+    .photo-item:nth-child(4) {
+        height: 300px;
+    }
+
+    .lightbox-content {
+        height: 70vh;
+    }
+
+    .lightbox-image {
+        max-height: 70vh;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header">
+
+    <nav class="navbar">
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+            MSK<span>.</span>
+        </a>
+
+
+        <ul
+            class="nav-links"
+            id="navLinks"
+        >
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="about.html"
+                    class="active"
+                >
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="impact.html">
+                    Impact
+                </a>
+            </li>
+
+            <li>
+                <a href="experience.html">
+                    Experience
+                </a>
+            </li>
+
+            <li>
+                <a href="portfolio.html">
+                    Portfolio
+                </a>
+            </li>
+
+            <li>
+                <a href="books.html">
+                    Books &amp; Stories
+                </a>
+            </li>
+
+            <li>
+                <a href="education.html">
+                    Education
+                </a>
+            </li>
+
+            <li>
+                <a href="skills.html">
+                    Skills
+                </a>
+            </li>
+
+            <li>
+                <a href="awards.html">
+                    Awards
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+
+        <button
+            id="themeToggle"
+            class="theme-toggle"
+            type="button"
+            aria-label="Switch theme"
+            title="Switch theme"
+        >
+
+            <span
+                id="themeIcon"
+                aria-hidden="true"
+            >
+                ☾
+            </span>
+
+        </button>
+
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            type="button"
+        >
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+    <div>
+
+        <div class="eyebrow">
+            About Me
+        </div>
+
+        <h1>
+            A career built around
+            <span>people, ideas &amp; impact.</span>
+        </h1>
+
+        <p>
+
+            I am Mubita Siasabuzingo Kabika — an educator,
+            journalist, media professional, youth advocate,
+            community development supporter and creative
+            storyteller committed to using my skills to
+            inform, empower and create opportunities for others.
+
+        </p>
+
+    </div>
+
+
+    <div class="hero-photo">
+
+        <img
+            src="images/profile-02.jpg"
+            alt="Mubita Siasabuzingo Kabika"
+        >
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PHOTO JOURNEY
+===================================================== -->
+
+<section class="photo-section">
+
+    <div class="photo-heading">
+
+        <div class="section-label">
+            A Visual Journey
+        </div>
+
+        <h2>
+            People, places &amp; moments.
+        </h2>
+
+        <p>
+            A selection of moments from my professional,
+            media, community and public engagements.
+        </p>
+
+    </div>
+
+
+    <div class="photo-gallery">
+
+
+        <div
+            class="photo-item"
+            data-image="images/profile-03.jpg"
+            data-title="Professional Journey"
+        >
+
+            <img
+                src="images/profile-03.jpg"
+                alt="Mubita Siasabuzingo Kabika"
+                loading="lazy"
+            >
+
+            <div class="photo-caption">
+                Professional Journey
+            </div>
+
+        </div>
+
+
+
+        <div
+            class="photo-item"
+            data-image="images/profile-04.jpg"
+            data-title="Professional Engagement"
+        >
+
+            <img
+                src="images/profile-04.jpg"
+                alt="Mubita Siasabuzingo Kabika"
+                loading="lazy"
+            >
+
+            <div class="photo-caption">
+                Professional Engagement
+            </div>
+
+        </div>
+
+
+
+        <div
+            class="photo-item"
+            data-image="images/profile-05.jpg"
+            data-title="Public Engagement"
+        >
+
+            <img
+                src="images/profile-05.jpg"
+                alt="Mubita Siasabuzingo Kabika"
+                loading="lazy"
+            >
+
+            <div class="photo-caption">
+                Public Engagement
+            </div>
+
+        </div>
+
+
+
+        <div
+            class="photo-item"
+            data-image="images/journalism-01.jpg"
+            data-title="Journalism & Reporting"
+        >
+
+            <img
+                src="images/journalism-01.jpg"
+                alt="Mubita Siasabuzingo Kabika during journalism work"
+                loading="lazy"
+            >
+
+            <div class="photo-caption">
+                Journalism &amp; Reporting
+            </div>
+
+        </div>
+
+
+
+        <div
+            class="photo-item"
+            data-image="images/journalism-02.jpg"
+            data-title="Media & Communication"
+        >
+
+            <img
+                src="images/journalism-02.jpg"
+                alt="Mubita Siasabuzingo Kabika during media work"
+                loading="lazy"
+            >
+
+            <div class="photo-caption">
+                Media &amp; Communication
+            </div>
+
+        </div>
+
+
+
+        <div
+            class="photo-item"
+            data-image="images/events-01.jpg"
+            data-title="Community Engagement"
+        >
+
+            <img
+                src="images/events-01.jpg"
+                alt="Mubita Siasabuzingo Kabika at a community event"
+                loading="lazy"
+            >
+
+            <div class="photo-caption">
+                Community Engagement
+            </div>
+
+        </div>
+
+
+
+        <div
+            class="photo-item"
+            data-image="images/events-02.jpg"
+            data-title="Public & Community Work"
+        >
+
+            <img
+                src="images/events-02.jpg"
+                alt="Mubita Siasabuzingo Kabika at a public programme"
+                loading="lazy"
+            >
+
+            <div class="photo-caption">
+                Public &amp; Community Work
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     LIGHTBOX
+===================================================== -->
+
+<div
+    class="lightbox"
+    id="lightbox"
+    aria-hidden="true"
+>
+
+    <button
+        class="lightbox-close"
+        id="lightboxClose"
+        type="button"
+        aria-label="Close image viewer"
+    >
+        ×
+    </button>
+
+
+    <button
+        class="lightbox-prev"
+        id="lightboxPrev"
+        type="button"
+        aria-label="Previous image"
+    >
+        ‹
+    </button>
+
+
+    <div class="lightbox-content">
+
+        <img
+            class="lightbox-image"
+            id="lightboxImage"
+            src=""
+            alt=""
+        >
+
+    </div>
+
+
+    <button
+        class="lightbox-next"
+        id="lightboxNext"
+        type="button"
+        aria-label="Next image"
+    >
+        ›
+    </button>
+
+
+    <div
+        class="lightbox-info"
+        id="lightboxInfo"
+    >
+        1 / 7
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     INTRO
+===================================================== -->
+
+<section class="intro">
+
+    <div class="intro-grid">
+
+
+        <div>
+
+            <div class="section-label">
+                My Journey
+            </div>
+
+            <h2>
+                Different fields. One purpose.
+            </h2>
+
+            <p>
+
+                My professional journey has developed across
+                education, journalism, media, youth development,
+                community engagement and creative production.
+
+            </p>
+
+            <p>
+
+                These areas may appear different, but they are
+                connected by one central purpose: using knowledge,
+                communication, creativity and leadership to make
+                a positive contribution to individuals and communities.
+
+            </p>
+
+        </div>
+
+
+
+        <div>
+
+            <div class="section-label">
+                What I Do
+            </div>
+
+            <p>
+
+                From teaching and reporting to working with young
+                people, supporting community groups and developing
+                films, I continually look for ways to turn ideas
+                into practical opportunities and meaningful results.
+
+            </p>
+
+            <p>
+
+                Select any area below to explore more about my
+                experience, work and contribution.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROFESSIONAL AREAS
+===================================================== -->
+
+<section class="areas">
+
+    <div class="areas-heading">
+
+        <div class="section-label">
+            Professional Profile
+        </div>
+
+        <h2>
+            What I Do
+        </h2>
+
+        <p>
+
+            Explore the different areas of my professional
+            and community work. Click a card to view the
+            full profile.
+
+        </p>
+
+    </div>
+
+
+    <div class="cards">
+
+
+        <div
+            class="profile-card"
+            data-profile="educator"
+        >
+
+            <div class="card-number">
+                01
+            </div>
+
+            <h3>
+                EDUCATOR
+            </h3>
+
+            <p>
+                Teaching • ICT • Skills Development
+            </p>
+
+            <div class="view-profile">
+                VIEW PROFILE →
+            </div>
+
+        </div>
+
+
+
+        <div
+            class="profile-card"
+            data-profile="journalist"
+        >
+
+            <div class="card-number">
+                02
+            </div>
+
+            <h3>
+                Journalist &amp; Editor
+            </h3>
+
+            <p>
+                Reporting • Interviews • Storytelling
+            </p>
+
+            <div class="view-profile">
+                VIEW PROFILE →
+            </div>
+
+        </div>
+
+
+
+        <div
+            class="profile-card"
+            data-profile="media"
+        >
+
+            <div class="card-number">
+                03
+            </div>
+
+            <h3>
+                MEDIA PROFESSIONAL
+            </h3>
+
+            <p>
+                Media Production • Field Coverage • Public Communication
+            </p>
+
+            <div class="view-profile">
+                VIEW PROFILE →
+            </div>
+
+        </div>
+
+
+
+        <div
+            class="profile-card"
+            data-profile="youth"
+        >
+
+            <div class="card-number">
+                04
+            </div>
+
+            <h3>
+                YOUTH ADVOCATE
+            </h3>
+
+            <p>
+                Youth Empowerment • Leadership • Mobilisation
+            </p>
+
+            <div class="view-profile">
+                VIEW PROFILE →
+            </div>
+
+        </div>
+
+
+
+        <div
+            class="profile-card"
+            data-profile="community"
+        >
+
+            <div class="card-number">
+                05
+            </div>
+
+            <h3>
+                COMMUNITY IMPACT
+            </h3>
+
+            <p>
+                Community Groups • Cooperatives • Development Support
+            </p>
+
+            <div class="view-profile">
+                VIEW PROFILE →
+            </div>
+
+        </div>
+
+
+
+        <div
+            class="profile-card"
+            data-profile="creative"
+        >
+
+            <div class="card-number">
+                06
+            </div>
+
+            <h3>
+                CREATIVE &amp; FILM PRODUCTION
+            </h3>
+
+            <p>
+                Screenwriting • Directing • Storytelling
+            </p>
+
+            <div class="view-profile">
+                VIEW PROFILE →
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROFILE PANEL
+===================================================== -->
+
+<div
+    class="profile-panel"
+    id="profilePanel"
+>
+
+    <div class="panel-content">
+
+
+        <button
+            class="close-panel"
+            id="closePanel"
+            type="button"
+        >
+            ×
+        </button>
+
+
+        <!-- EDUCATOR -->
+
+        <div
+            class="profile-info"
+            id="educator"
+        >
+
+            <div class="panel-number">
+                01 — PROFESSIONAL PROFILE
+            </div>
+
+            <h2>
+                EDUCATOR
+            </h2>
+
+            <p>
+                My work in education focuses on helping learners
+                develop practical knowledge, digital skills and the
+                confidence to apply what they learn in real-world
+                situations.
+            </p>
+
+            <h3>
+                Areas of Work
+            </h3>
+
+            <ul>
+                <li>ICT and computer studies</li>
+                <li>Practical computer training</li>
+                <li>Skills development</li>
+                <li>Digital literacy</li>
+                <li>Lesson planning and assessment</li>
+                <li>Student mentorship</li>
+                <li>Practical and project-based learning</li>
+                <li>Youth skills development</li>
+            </ul>
+
+            <p>
+                I believe education should go beyond theory.
+                Learners should gain practical skills that can help
+                them continue learning, solve problems and create
+                opportunities for themselves.
+            </p>
+
+        </div>
+
+
+        <!-- JOURNALIST -->
+
+        <div
+            class="profile-info"
+            id="journalist"
+        >
+
+            <div class="panel-number">
+                02 — PROFESSIONAL PROFILE
+            </div>
+
+            <h2>
+                JOURNALIST &amp; EDITOR
+            </h2>
+
+            <p>
+                My journalism work involves gathering information,
+                conducting interviews, reporting community issues
+                and transforming information into clear, accurate
+                and engaging stories.
+            </p>
+
+            <h3>
+                Areas of Work
+            </h3>
+
+            <ul>
+                <li>News reporting</li>
+                <li>Community journalism</li>
+                <li>Interviews</li>
+                <li>Field reporting</li>
+                <li>Feature stories</li>
+                <li>Story research and verification</li>
+                <li>News writing and editing</li>
+                <li>Public-interest reporting</li>
+            </ul>
+
+            <p>
+                I am particularly interested in stories that give
+                communities a voice and bring attention to issues,
+                people and developments that deserve public attention.
+            </p>
+
+        </div>
+
+
+        <!-- MEDIA -->
+
+        <div
+            class="profile-info"
+            id="media"
+        >
+
+            <div class="panel-number">
+                03 — PROFESSIONAL PROFILE
+            </div>
+
+            <h2>
+                MEDIA PROFESSIONAL
+            </h2>
+
+            <p>
+                My media experience extends beyond traditional
+                journalism into field production, interviews,
+                live coverage and digital media.
+            </p>
+
+            <p>
+                I work with media as a tool for informing audiences
+                and connecting communities with important information.
+            </p>
+
+            <h3>
+                Areas of Work
+            </h3>
+
+            <ul>
+                <li>Field media coverage</li>
+                <li>Television and digital media production</li>
+                <li>Live event coverage</li>
+                <li>Interviews and public discussions</li>
+                <li>Community storytelling</li>
+                <li>Media coordination</li>
+                <li>Digital content production</li>
+                <li>Public communication</li>
+            </ul>
+
+            <p>
+                Through my involvement in media projects, including
+                work with South Media Trends TV, I continue to explore
+                how local media can inform, document and amplify
+                community voices.
+            </p>
+
+        </div>
+
+
+        <!-- YOUTH -->
+
+        <div
+            class="profile-info"
+            id="youth"
+        >
+
+            <div class="panel-number">
+                04 — YOUTH ADVOCATE
+            </div>
+
+            <h2>
+                YOUTH ADVOCATE
+            </h2>
+
+            <p>
+                My work as a Youth Advocate is centred on empowering
+                young people to recognise their potential, make
+                positive choices and take an active role in the
+                development of their communities.
+            </p>
+
+            <p>
+                I have participated in and supported various
+                youth-focused initiatives, working with youth
+                development organisations and community groups on
+                projects aimed at promoting youth participation,
+                leadership, creativity, skills development and
+                positive social engagement.
+            </p>
+
+            <p>
+                I have also been involved in initiatives that bring
+                young people together, create opportunities for them
+                to express their talents and encourage constructive
+                alternatives to challenges such as drug and substance
+                abuse, unemployment and social exclusion.
+            </p>
+
+            <h3>
+                Tivannah Innovations Youth Organization
+            </h3>
+
+            <p>
+                In 2021, I founded Tivannah Innovations Youth
+                Organization, which was formally registered in 2022.
+                The organisation provides a platform for young people
+                to come together, develop their abilities, explore
+                creative opportunities and contribute positively
+                to their communities.
+            </p>
+
+            <p>
+                I believe youth advocacy is not simply about speaking
+                on behalf of young people. It is about creating
+                opportunities, connecting young people to resources
+                and opportunities, encouraging leadership, listening
+                to their ideas and helping them become active
+                participants in shaping their communities.
+            </p>
+
+        </div>
+
+
+        <!-- COMMUNITY -->
+
+        <div
+            class="profile-info"
+            id="community"
+        >
+
+            <div class="panel-number">
+                05 — COMMUNITY IMPACT
+            </div>
+
+            <h2>
+                COMMUNITY IMPACT
+            </h2>
+
+            <p>
+                My community development work focuses on helping
+                individuals and groups organise themselves, access
+                opportunities and build initiatives that can
+                contribute to the social and economic development
+                of their communities.
+            </p>
+
+            <p>
+                I have supported community members and young people
+                in forming and strengthening youth clubs, women's
+                groups, community organisations, cooperatives and
+                other local initiatives.
+            </p>
+
+            <h3>
+                Community Support
+            </h3>
+
+            <ul>
+                <li>Formation of youth clubs</li>
+                <li>Formation of women's groups</li>
+                <li>Formation of cooperatives</li>
+                <li>Community organisation and mobilisation</li>
+                <li>Guidance on organisational registration</li>
+                <li>Project development support</li>
+                <li>Funding application guidance</li>
+                <li>Identification of development opportunities</li>
+                <li>Support with CDF-related applications</li>
+                <li>Youth and women's empowerment initiatives</li>
+            </ul>
+
+            <p>
+                I also assist emerging groups with understanding
+                the process of formalising and registering their
+                organisations, including guidance on documentation
+                and requirements needed to establish credible
+                community-based groups.
+            </p>
+
+            <p>
+                Where opportunities are available, I help communities
+                identify potential sources of support and navigate
+                application processes for programmes such as
+                Constituency Development Fund (CDF) opportunities,
+                community grants and other development initiatives.
+            </p>
+
+            <p>
+                My goal is not simply to help people access
+                opportunities, but to help them develop the
+                organisation, confidence and capacity needed to
+                create opportunities within their own communities.
+            </p>
+
+        </div>
+
+
+        <!-- CREATIVE -->
+
+        <div
+            class="profile-info"
+            id="creative"
+        >
+
+            <div class="panel-number">
+                06 — CREATIVE &amp; FILM PRODUCTION
+            </div>
+
+            <h2>
+                CREATIVE &amp; FILM PRODUCTION
+            </h2>
+
+            <p>
+                Through Tivannah Innovations Youth Organization,
+                I have used film, storytelling and creative arts as
+                platforms for youth participation, talent development
+                and social awareness.
+            </p>
+
+            <p>
+                My filmmaking journey has involved writing and
+                developing stories that explore real-life social
+                issues, relationships, faith, family and the
+                experiences of people whose voices are often
+                overlooked.
+            </p>
+
+            <p>
+                I have written and directed several productions,
+                working with young people both in front of and behind
+                the camera and creating opportunities for emerging
+                actors and creatives to develop their talents.
+            </p>
+
+            <h3>
+                Selected Filmography
+            </h3>
+
+            <div class="filmography">
+
+                <div class="film">
+                    <strong>Agony of Marriage — 2022</strong>
+                    <span>Writer &amp; Director</span>
+                </div>
+
+                <div class="film">
+                    <strong>Golden Woman — 2023</strong>
+                    <span>Writer &amp; Director</span>
+                </div>
+
+                <div class="film">
+                    <strong>Power of Prayer — 2024</strong>
+                    <span>Writer &amp; Director</span>
+                </div>
+
+                <div class="film">
+                    <strong>Mwelwa — 2024</strong>
+                    <span>Writer &amp; Director</span>
+                </div>
+
+                <div class="film">
+                    <strong>The Voiceless — 2024</strong>
+                    <span>Writer &amp; Director</span>
+                </div>
+
+                <div class="film">
+                    <strong>Bride Price — 2025</strong>
+                    <span>Writer &amp; Director</span>
+                </div>
+
+                <div class="film">
+                    <strong>Where Is the Body — In Production</strong>
+                    <span>Writer</span>
+                </div>
+
+            </div>
+
+            <p style="margin-top:25px;">
+                These productions reflect my interest in using
+                storytelling to address social issues and create
+                meaningful conversations within communities.
+            </p>
+
+            <p>
+                Several completed productions are available through
+                the Tivannah Innovations Youth Organization YouTube
+                channel, providing an accessible record of the
+                organisation's creative work and its contribution
+                to youth-focused storytelling.
+            </p>
+
+            <p>
+                For me, filmmaking is more than entertainment.
+                It is a tool for communication, education, awareness
+                and social change, while also creating a space where
+                young people can develop their creativity and tell
+                stories that matter.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <p>
+            © 2026 Mubita Siasabuzingo Kabika.
+            All rights reserved.
+        </p>
+
+        <p>
+            Education • Media • Youth • Community • Creativity
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="js/script.js"></script>
+
+
+<script>
+
+/* =====================================================
+   ABOUT PAGE PHOTO LIGHTBOX
+===================================================== */
+
+const photoItems = document.querySelectorAll(".photo-item");
+
+const lightbox = document.getElementById("lightbox");
+
+const lightboxImage = document.getElementById("lightboxImage");
+
+const lightboxClose = document.getElementById("lightboxClose");
+
+const lightboxPrev = document.getElementById("lightboxPrev");
+
+const lightboxNext = document.getElementById("lightboxNext");
+
+const lightboxInfo = document.getElementById("lightboxInfo");
+
+
+let currentPhoto = 0;
+
+
+/* Open selected image */
+
+function openLightbox(index) {
+
+    currentPhoto = index;
+
+    const item = photoItems[currentPhoto];
+
+    const image = item.dataset.image;
+
+    const title = item.dataset.title;
+
+    lightboxImage.src = image;
+
+    lightboxImage.alt = title;
+
+    lightboxInfo.textContent =
+        `${currentPhoto + 1} / ${photoItems.length} — ${title}`;
+
+    lightbox.classList.add("active");
+
+    lightbox.setAttribute("aria-hidden", "false");
+
+    document.body.style.overflow = "hidden";
+}
+
+
+/* Close image viewer */
+
+function closeLightbox() {
+
+    lightbox.classList.remove("active");
+
+    lightbox.setAttribute("aria-hidden", "true");
+
+    document.body.style.overflow = "";
+
+    setTimeout(() => {
+
+        lightboxImage.src = "";
+
+    }, 300);
+}
+
+
+/* Show next image */
+
+function showNextPhoto() {
+
+    currentPhoto++;
+
+    if (currentPhoto >= photoItems.length) {
+        currentPhoto = 0;
+    }
+
+    updateLightbox();
+}
+
+
+/* Show previous image */
+
+function showPreviousPhoto() {
+
+    currentPhoto--;
+
+    if (currentPhoto < 0) {
+        currentPhoto = photoItems.length - 1;
+    }
+
+    updateLightbox();
+}
+
+
+/* Update image */
+
+function updateLightbox() {
+
+    const item = photoItems[currentPhoto];
+
+    const image = item.dataset.image;
+
+    const title = item.dataset.title;
+
+    lightboxImage.src = image;
+
+    lightboxImage.alt = title;
+
+    lightboxInfo.textContent =
+        `${currentPhoto + 1} / ${photoItems.length} — ${title}`;
+}
+
+
+/* Click photos */
+
+photoItems.forEach((item, index) => {
+
+    item.addEventListener("click", () => {
+
+        openLightbox(index);
+
+    });
+
+});
+
+
+/* Close button */
+
+lightboxClose.addEventListener("click", () => {
+
+    closeLightbox();
+
+});
+
+
+/* Next button */
+
+lightboxNext.addEventListener("click", () => {
+
+    showNextPhoto();
+
+});
+
+
+/* Previous button */
+
+lightboxPrev.addEventListener("click", () => {
+
+    showPreviousPhoto();
+
+});
+
+
+/* Click outside image */
+
+lightbox.addEventListener("click", (event) => {
+
+    if (event.target === lightbox) {
+
+        closeLightbox();
+
+    }
+
+});
+
+
+/* Keyboard controls */
+
+document.addEventListener("keydown", (event) => {
+
+    if (!lightbox.classList.contains("active")) {
+        return;
+    }
+
+
+    if (event.key === "Escape") {
+
+        closeLightbox();
+
+    }
+
+
+    if (event.key === "ArrowRight") {
+
+        showNextPhoto();
+
+    }
+
+
+    if (event.key === "ArrowLeft") {
+
+        showPreviousPhoto();
+
+    }
+
+});
+
+</script>
+
+
+</body>
+
+</html>
